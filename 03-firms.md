@@ -6,7 +6,7 @@ This report focuses on interventions to motivate workers to change their energy 
 
 The focus on interventions stimulating behavioural change at work is partly motivated by evidence showing that employee behaviour significantly impacts the energy consumption of commercial buildings [@azar2014comprehensive]. At the same time, other evidence shows that, while at work, people make fewer energy conservation actions than at home [@lin2019mixing].
 
-One reason for fewer energy conservation actions at work is that employees typically have weak incentives to save energy in the workplace. People are better off in warm rather than cold offices, using air-conditioning in the summer. And they may feel less of a personal connection with energy wastes, such as forgetting to turn off the office lights or computer when leaving, than at home.
+One reason for fewer energy conservation actions at work is that employees typically have weak incentives to save energy in the workplace. People are better off in warm rather than cold offices, using air-conditioning in the summer; and they may feel less of a personal connection with energy wastes, such as forgetting to turn off the office lights or computer when leaving, than at home.
 
 Another reason is that employees may feel they have no direct control over the energy systems, which are usually centralised. Such centralised systems have two mean implications for energy consumption. On the one hand, centralised systems may help facility managers oversee the buildings and generate energy savings. On the other, these systems could prevent energy conservation actions by the occupants, such as turning off the lights when not needed.
  
@@ -20,7 +20,7 @@ However, the drivers of energy use in the workplace still need to be better unde
 
 Here, we review three main categories of interventions as in Table \ref{tab:firms}.
 
-## Information, social norms, & peer education
+## Information, social norms, and peer education
 
 As for the residential sector, several studies have investigated information nudges to inform employees of energy consumption patterns via emails and innovative ways to visualise energy data (e.g., live
 dashboards).
@@ -39,16 +39,13 @@ energy use data accessed via mobile applications [@oppong2020developing].
 
 ## Monetary and non-monetary rewards
 
-Several studies have shown that non-monetary rewards, including
-vouchers, public social reward points [@handgraaf2013public], serious games [@orland2014saving] or the possibility of winning a competition, can reduce energy consumption. For example, a study testing the promotion of energy saving based on points engaged about 60% of employees, leading to a substantial
-reduction in energy consumption [@kuntz2012many].
+Several studies have shown that non-monetary rewards, including vouchers, public social reward points [@handgraaf2013public], serious games [@orland2014saving] or the possibility of winning a competition can reduce energy consumption. For example, a study testing the promotion of energy saving based on points engaged about 60% of employees, leading to a substantial reduction in energy consumption [@kuntz2012many].
 
 In a serious game called "Energy Chickens", energy saving measured
 through plug-in sensors earned participants eggs with which they could
 purchase accessories in a virtual farm. The intervention led to
 significant energy savings; however, the effects did not seem to last
-beyond duration of the game [@orland2014saving]. Similarly, a large-scale competition involving small material rewards among 500 Italian bank branches also
-reduced energy consumption [@fanghella2022evaluating].
+beyond the game duration [@orland2014saving]. Similarly, a large-scale competition involving small material rewards among 500 Italian bank branches also reduced energy consumption [@fanghella2022evaluating].
 
 In comparison, small-sized cash rewards rarely show an effect or are
 only short-lived [@handgraaf2013public; @schall2017incentivizing]. This evidence suggests that more than low-powered economic incentives are needed to achieve consistent and notable energy savings at work.
@@ -56,13 +53,7 @@ only short-lived [@handgraaf2013public; @schall2017incentivizing]. This evidence
 ## Default settings and automation
 
 Introducing defaults and automation can significantly impact energy
-saving [@staddon2016intervening]. Advanced power strips which automatically switch off computer screens or non-essential circuits can save up to 20% of energy
-consumption [@sheppy2014reducing]. Also, automatically reducing heating at the end of a workday or before weekends is a promising technological solution to
-energy over-consumption. However, setting the correct temperature or
-reasonable defaults is challenging. In one clever field experiment,
-researchers found that lowering the default room temperature by 1 or 2
-degrees in offices could increase energy consumption as the occupants
-are more likely to overrule the defaults [@brown2013testing].
+saving [@staddon2016intervening]. Advanced power strips which automatically switch off computer screens or non-essential circuits can save up to 20% of energy consumption [@sheppy2014reducing]. Also, automatically reducing heating at the end of a workday or before weekends is a promising technological solution to energy over-consumption. However, setting the correct temperature or reasonable defaults is challenging. In one field experiment, researchers found that lowering the default room temperature by 1 or 2 degrees in offices could increase energy consumption as the occupants are more likely to overrule the defaults [@brown2013testing].
 
 Another issue is how defaults could create a differential impact among
 employees. In response to the current energy crisis, many local and
@@ -72,30 +63,6 @@ default are rare, anecdotal evidence suggests that this decision may
 negatively affect workers with special needs and ignores individual
 perceptions of temperature and comfort.
 
-**Takeaways**
-
--   Policy interventions for energy savings at work can focus on
-    behaviour change or investment in energy-efficient technologies.
-
--   Lack of direct financial incentives, organisational support, and
-    limited energy conservation opportunities influence employee energy
-    consumption. Intrinsic motivations can partially compensate for the
-    lack of incentives or support.
-
--   Evidence points to effective behavioural interventions addressing
-    these problems.
-
-    -   **Information & Feedback**: comparative feedback activates
-        social norms and effectively encourages energy savings.
-
-    -   **Internal competitions & non-monetary rewards:** prizes promote
-        energy savings and activate image and reputation concerns that
-        will likely enhance social norm interventions.
-
-    -   **Defaults & automation:** Defaults can considerably impact
-        energy consumption, but setting the appropriate default is
-        challenging and should consider various behavioural responses,
-        including the risk of disparities.
 
   -----------------------------------------------------------------------
   **Intervention**       **Definition**
@@ -122,4 +89,30 @@ perceptions of temperature and comfort.
                          
   -----------------------------------------------------------------------
 
-Table: Intereventions promoting energy conservation at work \label{tab:firms}
+Table: Interventions promoting energy conservation at work \label{tab:firms}
+
+
+### Takeaways {-}
+
+-   Policy interventions for energy savings at work can focus on
+    behaviour change or investment in energy-efficient technologies.
+
+-   Lack of direct financial incentives, organisational support, and
+    limited energy conservation opportunities influence employee energy
+    consumption. Intrinsic motivations can partially compensate for the
+    lack of incentives or support.
+
+-   Evidence points to effective behavioural interventions addressing
+    these problems.
+
+    -   **Information & Feedback**: comparative feedback activates
+        social norms and effectively encourages energy savings.
+
+    -   **Internal competitions & non-monetary rewards:** prizes promote
+        energy savings and activate image and reputation concerns that
+        will likely enhance social norm interventions.
+
+    -   **Defaults & automation:** Defaults can considerably impact
+        energy consumption, but setting the appropriate default is
+        challenging and should consider various behavioural responses,
+        including the risk of disparities.

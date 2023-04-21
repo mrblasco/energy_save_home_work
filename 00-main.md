@@ -6,8 +6,8 @@ subtitle: "Behavioural interventions to tackle the energy crisis"
 date: April 2023
 
 author: 
-    - Marius Alt\thanks{European Commission, Joint Research Centre}
-    - Andrea Blasco\thanks{European Commission, Joint Research Centre}
+    - Marius Alt\thanks{European Commission, Joint Research Centre, Unit S4, Ispra}
+    - Andrea Blasco\thanks{European Commission, Joint Research Centre, Unit S1, Brussels}
     - Katharina Gangl\thanks{University of Vienna}
 
 documentclass: scrreport
@@ -59,4 +59,4 @@ PDF: XXXXX
 
 # Abstract {-}
 
-Energy crises and concerns about climate change call for a decisive shift in our daily behaviour at home and work. However, the public policies enabling this change requires an accurate understanding of the behavioural factors influencing energy consumption in both spheres and how people respond in different contexts. This report reviews these factors concerning residential and workplace interventions to promote energy savings. It also spotlights the conditions under which interventions targeting one context could spill over to another setting. The analysis highlights the main similarities and differences between promoting energy savings at home and work, such as differences in financial incentives, awareness, cognitive barriers, free-riding problems, and peer interactions. The report also provides recommendations for policies that aim to incorporate such spillovers, such as promoting habits, a green identity, and peer influence. However, our review of the academic literature highlights the scope for more empirical studies on these topics.
+Energy crises and concerns about climate change call for a decisive shift in our daily behaviour at home and work. However, the public policies enabling this change require an accurate understanding of the behavioural factors influencing energy consumption in both spheres and how people respond in different contexts. This report reviews these factors concerning residential and workplace interventions to promote energy savings. It also spotlights the conditions under which interventions targeting one context could spill over to another setting. The analysis highlights the main similarities and differences between promoting energy savings at home and work, such as differences in financial incentives, awareness, cognitive barriers, free-riding problems, and peer interactions. The report also provides recommendations for policies that aim to incorporate spillovers, such as promoting habits, a green identity, and peer influence. However, our review of the academic literature highlights the scope for more empirical studies on these topics.
