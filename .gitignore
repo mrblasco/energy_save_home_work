@@ -1,0 +1,12 @@
+*.aux
+*.pdf
+*.log
+*.toc
+*.docx
+*.pdf
+
+readings/
+archive/
+cover/
+
+.DS_Store
