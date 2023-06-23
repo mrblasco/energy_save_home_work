@@ -9,7 +9,7 @@ refs.bib : $(HOME)/iCloud/Readings/Energy/_nrg.bib
 
 opts:= -H latex/preamble.tex -B latex/before.tex --embed-resources -N
 
-main.tex :$(md_files)
+main.tex : $(md_files)
 	@pandoc $+ -C -o $@ $(opts)
 
 %.pdf : %.tex $(tex_files)
@@ -18,7 +18,7 @@ main.tex :$(md_files)
 draft.docx : main.tex
 	@pandoc $< --from latex -o $@
 
-$(report): img/cover_blue_v1bis.pdf main.pdf img/final_page.pdf
+$(report): cover_page.pdf main.pdf final_page.pdf
 	@pdfunite $+ $@
 
 view:
