@@ -18,7 +18,7 @@ main.tex :$(md_files)
 draft.docx : main.tex
 	@pandoc $< --from latex -o $@
 
-$(report): img/cover_blue_v1bis.pdf main.pdf img/final_page.pdf
+$(report): cover_blue_v1bis.pdf main.pdf final_page.pdf
 	@pdfunite $+ $@
 
 view:
