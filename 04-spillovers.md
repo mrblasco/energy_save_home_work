@@ -33,7 +33,7 @@ Multiple studies have investigated spillovers in the context of energy conservat
 
 A study by Egner and Klöckner [-@egner2021temporal], based on a large-scale survey of Norwegian households, found evidence of temporal spillovers in energy retrofitting behaviour. Specifically, they found that households who completed energy retrofits once were more likely to retrofit their homes again three years later. These findings suggest that the initial retrofitting behaviour had a positive spillover effect, leading to continued interest and commitment to energy efficiency over time. 
 
-Yes, there is still a need for more evidence on contextual spillovers in energy consumption across home and work. However, in the context of food waste, there is evidence of positive spillovers across these contexts. A quasi-experimental study shows that efforts to reduce food waste in the workplace are associated with food-saving actions at home [@wang2021take]. 
+Yet, there is still a need for more evidence on contextual spillovers in energy consumption across home and work. However, in the context of food waste, there is evidence of positive spillovers across these contexts. A quasi-experimental study shows that efforts to reduce food waste in the workplace are associated with food-saving actions at home [@wang2021take]. 
 
 In the context of energy conservation, there is evidence of a strong positive association between energy consumption at home and work via surveys [@littleford2014context; @lin2019mixing]. This association has been further tested in laboratory experiments, which have confirmed a positive link [@alt2022incentives]. However, there is still a need for more experimental evidence in the field to better understand the potential for spillovers in energy conservation across different contexts.
 
@@ -47,24 +47,9 @@ Regarding policy design, more research is needed to understand how policymakers 
 
 ## Habit formation
 
-Social psychologists define a habit as a settled routine or regular
-tendency triggered by exposure to the same environmental cues, for
-example, turning off the lights when no one is using them. It follows
-that once an energy-saving behaviour becomes an established habit, it
-does not need nor require specific incentives or motivations to be
-triggered, which makes habit formation a particularly appealing
-objective for policies, as discussed elsewhere [@van2019drivers].
+Social psychologists define a habit as a settled routine or regular tendency triggered by exposure to the same environmental cues, for example, turning off the lights when no one is using them. It follows that once an energy-saving behaviour becomes an established habit, it does not need nor require specific incentives or motivations to be triggered, which makes habit formation a particularly appealing objective for policies, as discussed elsewhere [@van2019drivers].
 
-Various studies examined interventions encouraging efficient
-energy-consumption habits showing evidence that policies that stimulate
-habit formation are more effective. For example, Ito et al. randomly
-assigned households to a dynamic pricing scheme encouraging good energy
-conservation habits [@ito2018moral]. Results show that this approach produced
-significant energy savings, most of which were thorough habit formation
-as the treatment effect persisted even after the intervention had
-ceased. This study underscores a more general idea suggesting that habit
-formation could explain why one-shot behavioural interventions generate
-results on energy conservation that continue over time [@allcott2014short; @jessoe2014knowledge].
+Various studies examined interventions encouraging efficient energy-consumption habits showing evidence that policies that stimulate habit formation are effective. For example, Ito et al. [-@ito2018moral] randomly assigned households to a dynamic pricing scheme encouraging good energy conservation habits. Results show that this approach produced significant energy savings, most of which were thorough habit formation as the treatment effect persisted even after the intervention had ceased. This study underscores a more general idea suggesting that habit formation could explain why one-shot behavioural interventions generate results on energy conservation that continue over time [@allcott2014short; @jessoe2014knowledge].
 
 ## Identity
 
@@ -84,11 +69,9 @@ identity [@geng2019globalize; @gleue2022identity; @fanghella2019use].
 
 ## Commitment to the cause
 
-Committing to engage pro-environmentally can positively affect
-spillovers. Such a commitment can occur in the form of pledges but also in the form of actual behaviour. Inclining in costly or effortful behaviour for the environment's sake can be considered a self-signal of being committed to a pro-environmental goal. Thereby, subsequent
-pro-environmental actions in other contexts become more likely.
+Committing to engage pro-environmentally can positively affect spillovers. Such a commitment can occur in the form of pledges but also in the form of actual behaviour. Inclining in costly or effortful behaviour for the environment's sake can be considered a self-signal of being committed to a pro-environmental goal. As a consequence, subsequent pro-environmental actions in other contexts become more likely. Through these self-signals, commitments are highly linked to the establishment of an environmental identity to which the respective actions positively contribute. 
 
-There exists evidence that people who gave up on their monetary income for a good cause have been less likely to seize benefits at the expense of others when having the opportunity to thereafter^61^. This shows that commitments in pledges and actions can act as a \"foot in the door\", helping people to focus on a specific goal or objective.
+There exists evidence that people who gave up on their monetary income for a good cause have been less likely to seize benefits at the expense of others when having the opportunity to thereafter [@gneezy2012paying]. This shows that commitments in pledges and actions can act as a "foot in the door", helping people to focus on a specific goal or objective.
 
 ## Moral licensing
 
@@ -108,24 +91,15 @@ wrong/immoral.
 Several studies have examined moral licensing in various settings to
 assess the magnitude of these effects. For instance, a meta-analysis of
 91 state-of-the-art experiments shows the effect size of moral licensing
-can be considerable [@blanken2015meta]. However, we need more studies focused on the effects of moral licensing on pro-environmental behaviour[^11].
+can be considerable [@blanken2015meta]. However, we need more studies focused on the effects of moral licensing on energy consumption.
 
-How moral licensing relates to policies is still a largely unexplored
-topic. However, using a laboratory experiment in the context of
-charitable donations, a recent study shows that interventions offering
-monetary incentives to adopt pro-environmental behaviours could backfire
-and amplify the adverse effects of moral licensing [@alt2022incentives]. One possible explanation is that a "monetary mindset" induces individuals to
-rationalize behaviours differently when offered cash incentives or moral
-suasion, as discussed in another related study [@ito2018moral]. Combinations of
-monetary incentives with commitment devices or norm interventions could
-counteract such negative spillovers, as they foster consistency within a
-newly adapted behaviour, as discussed in various studies [@royer2015incentives;@alt2022incentives].
+How moral licensing relates to policies is still a largely unexplored topic. However, using an experiment in the context of charitable donations, a recent study shows that interventions offering monetary incentives to adopt pro-environmental behaviours could backfire and amplify the adverse effects of moral licensing [@alt2022incentives]. One possible explanation is that a "monetary mindset" induces individuals to rationalize behaviours differently when offered cash incentives or moral suasion, as discussed in another related study [@ito2018moral]. Combinations of monetary incentives with commitment devices or norm interventions could counteract such negative spillovers, as they foster consistency within a newly adapted behaviour, as discussed in various studies [@royer2015incentives;@alt2022incentives].
 
 ## Peer effects
 
 Policies can influence social dynamics, such as peer effects, to
 trigger savings in energy consumption. For example, one intervention
-could target a subset of households in each neighbourhood, and the intervention's effects could spread to other families. This diffusion could happen organically, through word of mouth or there might be elements of the policies that foster spreading information, such as referral programs.
+could target a subset of households in each neighbourhood, and the intervention's effects could spread to other households. This diffusion could happen organically, through word of mouth or there might be elements of the policies that foster spreading information, such as referral programs.
 
 The mechanisms behind peer effects are manifold. They can be driven by a
 person's desire to comply with the behaviour of others, which is
@@ -139,22 +113,6 @@ studies have explored various approaches to promote energy savings in
 the work environment [@nye2010exploring] and among households [@wolske2020peer]. However, integrating interventions with peer effects across different settings remains challenging, primarily because social dynamics and interactions vary
 substantially across different contexts (e.g., in the office and at
 home).
-
-**Takeaways**
-
--   Office and home energy consumption interventions are interlinked via
-    "spillover," which includes policy intervention effects on
-    non-targeted behaviours.
-
--   Spillovers operate across different behaviours and contexts, over
-    time, and across individuals.
-
--   Spillovers complicate the ex-ante cost-benefit analysis and ex-post
-    impact assessment of energy-conservation policies.
-
--   Integrating spillovers into policy design will enhance the
-    effectiveness of policy interventions (e.g., habit formation, peer
-    effects).
 
   --------------------------------------------------------------------------
   **Spillover**     **Definition**
@@ -195,3 +153,20 @@ home).
   --------------------------------------------------------------------------
 
 Table: Types of spillovers \label{tab:spillovers}
+
+
+### Takeaways {-}
+
+-   Office and home energy consumption interventions are interlinked via
+    "spillover," which includes policy intervention effects on
+    non-targeted behaviours.
+
+-   Spillovers operate across different behaviours and contexts, over
+    time, and across individuals.
+
+-   Spillovers complicate the ex-ante cost-benefit analysis and ex-post
+    impact assessment of energy-conservation policies.
+
+-   Integrating spillovers into policy design will enhance the
+    effectiveness of policy interventions (e.g., habit formation, peer
+    effects).

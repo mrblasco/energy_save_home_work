@@ -22,7 +22,11 @@ main.tex : config.yml $(md_files)
 docx : main.tex
 	@pandoc $< --from latex --to docx -o $(doc_file)
 
+<<<<<<< HEAD
 $(report): $(cover) main.pdf final_page.pdf
+=======
+$(report): cover_blue_v1bis.pdf main.pdf final_page.pdf
+>>>>>>> 55a12151572c57028b743991e7b2b476dd43edf6
 	@pdfunite $+ $@
 
 view:
