@@ -1,27 +1,35 @@
+% KOMA scripts 
+\addtokomafont{chapter}{\small} %% Here it goes
+\addtokomafont{section}{\Large\bfseries} %% Here it goes
+
+
+
 % Add packages
+\usepackage{awesomebox}
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{Optima}
+
+% Page size 
+\usepackage[margin=2.5cm]{geometry}
+
+% Table with colors
+\definecolor{headercolor}{RGB}{237, 237, 237} % Define color for header row
+\definecolor{rowcolor}{RGB}{245, 245, 245} % Define color for alternate rows
+\definecolor{blueEC}{HTML}{004494} % Define color for alternate rows
+
+% Create highlight boxes
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+
+% Custom key points textbox
+\newtcolorbox{keypoints}{colback=gray!10,
+    colframe=gray!80,
+    arc=0pt,
+    boxrule=0.5pt,
+    fonttitle=\bfseries,
+    title=Key Points
+}
 
 
-\KOMAoptions{fontsize=12pt}
-
-
-% Title page 
-\makeatletter
-\def\@maketitle{%
-  \newpage
-  \null
-  \vskip 2em%
-  \begin{center}%
-  \let \footnote \thanks
-    {\LARGE \@title XXXX\par}%
-    \vskip 1.5em%
-    {\large
-      \lineskip .5em%
-      \begin{tabular}[t]{c}%
-        \@author
-      \end{tabular}\par}%
-    \vskip 1em%
-    %{\large \@date}%
-  \end{center}%
-  \par
-  \vskip 1.5em}
-\makeatother

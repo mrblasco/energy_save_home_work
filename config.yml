@@ -1,0 +1,21 @@
+---
+title: "Energy Savings at Home and Work"
+
+subtitle: "Behavioural Interventions to Tackle the Energy Crisis"
+
+date: \today
+
+author: 
+    - Marius Alt\thanks{European Commission, Joint Research Centre}
+    - Andrea Blasco\thanks{European Commission, Joint Research Centre}
+    - Katharina Gangl\thanks{Institute for Advanced Studies, Behavioural Economics Research Group; University of Vienna, Faculty of Psychology}
+
+documentclass: scrreport
+classoption: captions=heading
+
+fontsize: 12pt 
+bibliography: [refs.bib]
+link-citations: true
+links-as-notes: true
+toc: true
+---

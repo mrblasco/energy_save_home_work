@@ -1,0 +1,195 @@
+\documentclass{article}
+
+% Colors 
+\usepackage{xcolor}
+\definecolor{blueEC}{HTML}{004494} % Define color for alternate rows
+
+
+% Packages
+\usepackage[utf8]{inputenc} % Encoding
+\usepackage{lipsum} % Dummy text
+\usepackage{graphicx} % Graphics
+\usepackage{float} % Floating figures and tables
+\usepackage{hyperref} % Hyperlinks
+\usepackage{titlesec} % Section and subsection titles
+\usepackage[most]{tcolorbox} % Textbox for key points
+\usepackage{tikz} % TikZ package for graphics
+\usepackage{tabularx} 
+
+
+
+
+\usepackage{awesomebox}
+\usepackage[margin=2.5cm]{geometry}
+
+\usepackage{fontspec}
+\setmainfont{Optima}
+
+% Custom title page
+\title{\textbf{\LARGE Report Title}}
+\author{\Large Author}
+\date{\Large \today}
+
+% Custom section styles
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{\baselineskip}{\baselineskip}
+
+% Custom key points textbox
+\newtcolorbox{keypoints}{
+        colback     =blueEC!10
+        , colframe  =blueEC!80
+        , arc       =0pt
+        , boxrule   =0.5pt % Frame line
+        , fonttitle =\bfseries
+        , title     =Key Points
+}
+
+% Custome list
+\newtcolorbox{spillovers}{colback=gray!10
+    , colframe=gray!80
+    , arc=0pt
+    , boxrule=0.5pt
+    , fonttitle=\bfseries
+    , title=Spillovers}
+
+% 
+
+\newtcolorbox{mybox}{
+    enhanced, sharp corners, frame hidden,
+    colframe    =   blueEC!80,
+    colback     =   white,
+    coltitle    =   black,
+    fonttitle   =   \bfseries,
+    boxrule     =   0.5pt,
+    arc         =   0pt,
+    left        =   10pt,
+    right       =   10pt,
+    top         =   8pt,
+    bottom      =   8pt,
+    boxsep      =   0.5pt,
+    overlay={
+        \fill[blueEC!10] (frame.north west) rectangle ([xshift=15pt]frame.south west);
+        \draw[blueEC!80,line width=2pt] (frame.north west) rectangle (frame.south east);
+    }
+}
+
+\newtcolorbox{scientificbox}{
+    enhanced,
+    colframe=blue!80,
+    colback=white,
+    coltitle=blue!80,
+    fonttitle=\bfseries\large,
+    sharp corners,
+    boxrule=0.5pt,
+    arc=3pt,
+    left=10pt,
+    right=10pt,
+    top=8pt,
+    bottom=8pt,
+    boxsep=0pt,
+    overlay={
+        \node[anchor=west,inner sep=2pt,font=\small] at ([xshift=6pt]frame.west) {$>$};
+        \draw[blue!80,line width=0.5pt,dashed] ([xshift=16pt]frame.south west) -- ([xshift=16pt]frame.north west);
+    }
+}
+
+\definecolor{ecblue}{RGB}{0,33,71}
+\definecolor{ecyellow}{RGB}{255,215,0}
+
+\newtcolorbox{europeanbox}{
+    enhanced,
+    colframe=ecblue,
+    colback=white,
+    coltitle=ecblue,
+    fonttitle=\bfseries\large,
+    sharp corners,
+    boxrule=0.5pt,
+    arc=3pt,
+    left=10pt,
+    right=10pt,
+    top=8pt,
+    bottom=8pt,
+    boxsep=0pt,
+    overlay={
+        \node[anchor=west,inner sep=2pt,font=\small, text=ecblue] at ([xshift=6pt]frame.west) {$.$};
+        \draw[ecblue,line width=0.5pt,dashed] ([xshift=16pt]frame.south west) -- ([xshift=16pt]frame.north west);
+    }
+}
+
+
+% Document
+\begin{document}
+
+ 
+\section{Introduction}
+\begin{keypoints}
+\begin{itemize}
+  \item Point 1
+  \item Point 2
+  \item Point 3
+\end{itemize}
+\end{keypoints}
+
+\lipsum[1] % Replace with your introduction
+
+
+\begin{mybox}
+    \lipsum[1] % Replace with your introduction
+\end{mybox}
+
+\begin{mybox}
+    \begin{itemize}
+        \item \textbf{Behavioural Spillovers.} This category refers to the effects of one behavioural intervention on non-targeted behaviours. For example, a policy reducing households' electricity consumption by raising individuals' environmental concerns could also affect people's inclinations towards recycling, eco-driving, and other non-targeted pro-environmental behaviours.
+        
+        \item \textbf{Temporal Spillovers.} These spillovers occur when the effect of one behavioural intervention at a given time also influences the same behaviour in the future. For example, educating children to save energy will affect their current behaviour, but it could also influence their behaviour later in life.
+        
+        \item \textbf{Contextual Spillovers.} These arise when the effect of one behavioural intervention transfers from one context to another. For example, interventions that persuade households to consume less energy at home could also stimulate energy savings at work.
+        
+        \item \textbf{Social Spillovers.} These refer to the influence that choices by others may have on individual choices. Unlike other spillovers, they occur between individuals. For example, an intervention informing school children about energy savings at school could also affect the information, and thus energy consumption, of their family and friends.
+      \end{itemize}
+\end{mybox}
+
+\begin{europeanbox}
+    \begin{itemize}
+        \item \textbf{Behavioural Spillovers.} This category refers to the effects of one behavioural intervention on non-targeted behaviours. For example, a policy reducing households' electricity consumption by raising individuals' environmental concerns could also affect people's inclinations towards recycling, eco-driving, and other non-targeted pro-environmental behaviours.
+        
+        \item \textbf{Temporal Spillovers.} These spillovers occur when the effect of one behavioural intervention at a given time also influences the same behaviour in the future. For example, educating children to save energy will affect their current behaviour, but it could also influence their behaviour later in life.
+        
+        \item \textbf{Contextual Spillovers.} These arise when the effect of one behavioural intervention transfers from one context to another. For example, interventions that persuade households to consume less energy at home could also stimulate energy savings at work.
+        
+        \item \textbf{Social Spillovers.} These refer to the influence that choices by others may have on individual choices. Unlike other spillovers, they occur between individuals. For example, an intervention informing school children about energy savings at school could also affect the information, and thus energy consumption, of their family and friends.
+      \end{itemize}
+\end{europeanbox}
+
+\begin{scientificbox}
+    \begin{itemize}
+        \item \textbf{Behavioural Spillovers.} This category refers to the effects of one behavioural intervention on non-targeted behaviours. For example, a policy reducing households' electricity consumption by raising individuals' environmental concerns could also affect people's inclinations towards recycling, eco-driving, and other non-targeted pro-environmental behaviours.
+        
+        \item \textbf{Temporal Spillovers.} These spillovers occur when the effect of one behavioural intervention at a given time also influences the same behaviour in the future. For example, educating children to save energy will affect their current behaviour, but it could also influence their behaviour later in life.
+        
+        \item \textbf{Contextual Spillovers.} These arise when the effect of one behavioural intervention transfers from one context to another. For example, interventions that persuade households to consume less energy at home could also stimulate energy savings at work.
+        
+        \item \textbf{Social Spillovers.} These refer to the influence that choices by others may have on individual choices. Unlike other spillovers, they occur between individuals. For example, an intervention informing school children about energy savings at school could also affect the information, and thus energy consumption, of their family and friends.
+      \end{itemize}
+\end{scientificbox}
+
+\begin{spillovers}
+\begin{itemize}
+    \item \textbf{Behavioural Spillovers.} This category refers to the effects of one behavioural intervention on non-targeted behaviours. For example, a policy reducing households' electricity consumption by raising individuals' environmental concerns could also affect people's inclinations towards recycling, eco-driving, and other non-targeted pro-environmental behaviours.
+    
+    \item \textbf{Temporal Spillovers.} These spillovers occur when the effect of one behavioural intervention at a given time also influences the same behaviour in the future. For example, educating children to save energy will affect their current behaviour, but it could also influence their behaviour later in life.
+    
+    \item \textbf{Contextual Spillovers.} These arise when the effect of one behavioural intervention transfers from one context to another. For example, interventions that persuade households to consume less energy at home could also stimulate energy savings at work.
+    
+    \item \textbf{Social Spillovers.} These refer to the influence that choices by others may have on individual choices. Unlike other spillovers, they occur between individuals. For example, an intervention informing school children about energy savings at school could also affect the information, and thus energy consumption, of their family and friends.
+  \end{itemize}
+\end{spillovers}
+
+   
+
+\end{document}

@@ -1,4 +1,16 @@
-# Spillovers and peer effects {#sec:spillovers}
+# Spillovers and Peer Effects {#sec:spillovers}
+
+<!-- Section highlights -->
+\begin{tcolorbox}[colback=yellow!10,colframe=black]
+\textbf{Key Points: Spillovers and Peer Effects}
+\begin{itemize}[leftmargin=*,labelsep=5mm]
+    \item Energy conservation policies at home and work are interconnected through spillovers, which refer to the effects of policy interventions on non-targeted behaviours.
+    \item Spillovers can be positive or negative, impacting the overall effectiveness of a policy.
+    \item Types of spillovers include behavioural, temporal, contextual, and social spillovers, each with its own characteristics and implications.
+    \item Evidence shows the existence of spillovers in energy conservation, such as rebound effects, temporal spillovers in retrofitting behavior, contextual spillovers in food waste reduction, and social spillovers in the adoption of clean energy technologies.
+    \item Understanding and leveraging spillovers can enhance policy design and evaluation, with strategies like promoting habit formation, fostering a green identity, encouraging commitment, addressing moral licensing, and leveraging peer effects.
+\end{itemize}
+\end{tcolorbox}
 
 Even though we have treated policies promoting energy conservation at home and work separately so far, they are strongly interlinked. The concept of "spillover" is often used to describe this connection, as it refers to the effects of policy interventions on multiple non-targeted behaviours.
 

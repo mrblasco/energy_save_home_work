@@ -1,7 +1,24 @@
-
 # Saving energy at home {#sec:home}
 
-There are two different types of policy interventions that promote energy savings among households. The first approach involves encouraging families to change their energy consumption behaviours, like turning off lights and appliances when not used, cooking more efficiently, and reducing the use of heating and cooling systems.
+<!-- Section highlights -->
+\begin{keypoints}
+\begin{itemize}[leftmargin=*,labelsep=5mm]
+    \item Policy interventions can promote changing behaviour at home or encouraging investment in energy-efficient appliances and home renovations.
+    \item Employee behaviour significantly impacts energy consumption in commercial buildings, with lower energy conservation at work than at home.
+    \item Weak incentives and lack of direct control over energy consumption contribute to lower energy conservation at work.
+    \item Personal rewards, organisational support, and addressing intrinsic motivations can be effective strategies for achieving energy savings at work.
+    \item Further research is needed to understand the drivers of energy use in the workplace, but various interventions have been tested.
+\end{itemize}
+\end{keypoints}
+ 
+<!-- 
+Policy interventions to promote energy savings at home can be of two types: behaviour change and adoption of energy-efficient technologies.
+The "Playing My Part" campaign by the European Commission combined both approaches to address rising energy costs after Russia's invasion of Ukraine.
+The Energy Paradox explains why households often do not adopt energy-saving practices, citing information barriers, time discounting, and heterogeneity in consumption patterns.
+Information nudges and energy labels effectively promote energy savings by providing easy-to-understand information and making long-term impacts more salient.
+One-stop shops, individual feedback with goal setting, intrinsic motivations and social norms, and warnings and fact-checking are additional interventions that encourage energy conservation at home. -->
+
+Two different types of policy interventions promote energy savings among households. The first approach involves encouraging families to change their energy consumption behaviours, like turning off lights and appliances when not used, cooking more efficiently, and reducing the use of heating and cooling systems.
 
 The second approach involves stimulating purchases of energy-efficient technologies, such as replacing traditional incandescent bulbs with new LED ones, buying energy-efficient appliances, and installing "smart" home systems. Long-term strategies can also foster investments in home renovations, from small renovations like replacing old windows to reduce heat loss in the winter to installing photovoltaic panels.
 
@@ -19,13 +36,18 @@ On the one hand, the recent increase in retail energy prices due to the surge in
 
 On the other hand, many studies have shown that, despite receiving basic information about the potential benefits of good energy conservation practices, only a minority of families tend to adopt such practices, even when cost-effective [@jaffe1994energy]. This means that most families often stick to their usual energy consumption patterns or habits rather than trying to reduce their energy consumption.  
 
-Classical explanations for this Energy Paradox, as it's called, are threefold [@jaffe1994energy]:
+\begin{keypoints}
+Classical explanations for the Energy Paradox
+\begin{itemize}
 
-* **Information barriers**. Families face multiple barriers either in accessing information or absorbing it. For example, a study, based on a survey of Dutch households, shows that only about half of respondents are aware of their monthly charges for energy consumption, and only 40% understand the correct trade-off between different investment decisions in energy equipment [@brounen2013energy].
+\item \textbf{Information barriers} Families face multiple barriers either in accessing information or absorbing it. For example, a study, based on a survey of Dutch households, shows that only about half of respondents are aware of their monthly charges for energy consumption, and only 40% understand the correct trade-off between different investment decisions in energy equipment [@brounen2013energy].
 
-* **Time discounting**. Investments in energy efficiency or behavioural changes involve immediate costs (i.e., the cost of installation) and delayed rewards (i.e., lower electricty bills). However, if families heavily discount the future benefits they will enjoy by switching to more energy-efficient actions, they would rather spend their time or money elsewhere today. 
+\item \textbf{Time discounting} Investments in energy efficiency and, to some extent, significant behavioural changes involve individual costs. These costs are typically immediate (i.e., installation expenses) offering only delayed rewards (i.e., lower electricty bills). However, if families heavily discount the future, they would rather spend their time or money elsewhere today.
 
-* **Heterogeneity in consumption**. Households are widely heterogeneous concerning their energy consumption patterns. Thus, even if a technology (or behaviour) is profitable on *average*, it may remain unattractive for a large portion of the population.
+\item \textbf{Heterogeneity in consumption}. Households are widely heterogeneous concerning their energy consumption patterns. Thus, even if a technology (or behaviour) is profitable on *average*, it may remain unattractive for a large portion of the population.
+
+\end{itemize}
+\end{keypoints}
 
 The above explanations assume that families would make optimal decisions if they had more information about costs and benefits or the market offered them  more personalized solutions to save energy. However, much psychology and behavioural economics evidence have challenged these assumptions on the grounds that people do not typically make optimal decisions, if under the best conditions. On the contrary, individuals often act as they were predictably "irrational" or biased. 
 

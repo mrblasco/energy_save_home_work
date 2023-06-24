@@ -1,0 +1,35 @@
+\documentclass{book}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+
+\frontmatter
+\thispagestyle{empty}
+\newgeometry{margin=0pt}
+\begin{titlepage}
+    \centering
+    \vspace*{4cm}
+    \includegraphics[width=\paperwidth,
+                    height=\paperheight,
+                    keepaspectratio]{cover_image.jpg} % Replace with your image file name
+    
+    \vfill
+    
+    \Huge\bfseries
+    \textcolor{red}{\sffamily Book Title}
+    
+    \vspace{1cm}
+    
+    \Large
+    \textcolor{red}{\sffamily Author Name}
+    
+\end{titlepage}
+\restoregeometry
+
+\mainmatter
+
+% Rest of the document goes here...
+
+\end{document}
