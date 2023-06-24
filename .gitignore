@@ -1,3 +1,5 @@
+.DS_Store
+
 *.aux
 *.log
 *.toc
@@ -6,9 +8,5 @@
 
 main.*
 
-readings/
-archive/
-cover/
-testing/
+*/
 
-.DS_Store
