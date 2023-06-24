@@ -6,16 +6,28 @@ subtitle: "Behavioural Interventions to Tackle the Energy Crisis"
 date: \today
 
 author: 
-    - Marius Alt\thanks{European Commission, Joint Research Centre}
-    - Andrea Blasco\thanks{European Commission, Joint Research Centre}
-    - Katharina Gangl\thanks{Institute for Advanced Studies, Behavioural Economics Research Group; University of Vienna, Faculty of Psychology}
+    - name: Marius Alt
+      number: 1 
+    - name: Andrea Blasco
+      number: 1
+    - name: Katharina Gangl
+      number: 2,3
 
-documentclass: scrreport
-classoption: captions=heading
+affiliation: 
+    - name: European Commission, Joint Research Centre
+      number: 1
+    - name: Institute for Advanced Studies, Behavioural Economics Research Group
+      number: 2
+    - name: University of Vienna, Faculty of Psychology
+      number: 3
+
 
 fontsize: 12pt 
 bibliography: [refs.bib]
 link-citations: true
 links-as-notes: true
 toc: true
+toc-title: Table of Contents
+
+abstract: "Energy crises and concerns about climate change call for a decisive shift in our daily behaviour at home and work. However, formulating public policies encouraging and facilitating this change presents considerable challenges. One key aspect is having an accurate understanding of the behavioural factors influencing energy consumption in residential and workplace settings and how people respond in different contexts. This report reviews these behavioural factors, discussing interventions to foster energy savings. It also spotlights the conditions under which interventions targeting one context could have an impact, 'spillover', in another setting. The analysis highlights the main similarities and differences between promoting energy savings at home and work, such as differences in financial incentives, awareness, cognitive barriers, free-riding problems, and peer interactions. The report also provides recommendations for policies incorporating spillovers, such as promoting habits, a green identity, and peer influence."
 ---
