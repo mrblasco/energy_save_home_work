@@ -2,9 +2,13 @@
 *.log
 *.toc
 *.docx
+*.pdf
+
+main.*
 
 readings/
 archive/
 cover/
+testing/
 
 .DS_Store

@@ -22,7 +22,8 @@ affiliation:
       number: 3
 
 
-fontsize: 12pt 
+fontsize: 11pt 
+linestretch: 1.15
 bibliography: [refs.bib]
 link-citations: true
 links-as-notes: true

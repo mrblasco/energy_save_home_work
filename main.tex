@@ -3,10 +3,11 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-  12pt,
-  captions=heading]{scrreport}
+  11pt,
+]{article}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
+\usepackage{setspace}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -44,6 +45,19 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -71,21 +85,19 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-% KOMA scripts 
-\addtokomafont{chapter}{\small} %% Here it goes
-\addtokomafont{section}{\Large\bfseries} %% Here it goes
-
-
-
-% Add packages
-\usepackage{awesomebox}
+% Page size 
+\usepackage{geometry}
+\geometry{
+  a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm
+  %, showframe
+}
 
 % Fonts
 \usepackage{fontspec}
 \setmainfont{Optima}
 
-% Page size 
-\usepackage[margin=2.5cm]{geometry}
+% Add packages
+\usepackage{awesomebox}
 
 % Table with colors
 \definecolor{headercolor}{RGB}{237, 237, 237} % Define color for header row
@@ -106,6 +118,51 @@
 }
 
 
+% Notice and Title page 
+% ~~~~~~~~~~~~~~~~~~~~`' 
+\makeatletter
+\renewcommand{\maketitle}{%
+    \begin{titlepage}
+        \textcolor{white}{.} % hack to make vfill work
+        \vfill
+        \small 
+
+        This publication is a Technical Report by the Joint Research Centre (JRC), the European Commission's science and knowledge service. It aims to provide evidence-based scientific support to the European policymaking process. The scientific output expressed does not imply a policy position of the European Commission. Neither the European Commission nor any person acting on behalf of the Commission is responsible for the use that might be made of this publication. Users should contact the referenced source for information on the methodology and quality underlying the data used in this publication for which the source is neither Eurostat nor other Commission services. The designations employed and the presentation of material on the maps do not imply the expression of any opinion whatsoever on the part of the European Union concerning the legal status of any country, territory, city or area or its authorities or the delimitation of its frontiers or boundaries.  
+        
+        \textbf{Contact Information:}
+        
+        Name: Andrea Blasco\\
+        Email: andrea.blasco@ec.europa.eu\\
+        Address: European Commission, JRC, Directorate S, Unit S.1, Brussels, Belgium\\
+        
+        
+        \textbf{EU Science Hub}\\
+        joint-research-centre.ec.europa.eu\\
+        
+        
+        \textbf{JRC133518}\\
+        Print: XXXXXX\\
+        PDF: XXXXX\\
+        
+        \textbf{@ European Union, 2023}\\ 
+        
+        The reuse policy of the European Commission is implemented by Commission Decision 2011/833/EU of 12 December 2011 on the reuse of Commission documents (OJ L 330, 14.12.2011, p. 39). Unless otherwise noted, the reuse of this document is authorised under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence (\url{https://creativecommons.org/ licenses/by/4.0}). This means that reuse is allowed, provided appropriate credit is given and any changes are indicated. For any use or reproduction of photos or other material the EU does not own, permission must be sought directly from the copyright holders.
+
+        % Title page 
+        \clearpage 
+        \topskip=120pt
+        \begin{center}
+            \textbf{\LARGE \@title}
+            \vspace{60pt}
+            \@date
+        \end{center}
+    
+        \vfill
+        This publication was authored by: \@author
+
+    \end{titlepage}
+}
+\makeatother
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -116,7 +173,6 @@
 \DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
 \hypersetup{
   pdftitle={Energy Savings at Home and Work},
-  pdfauthor={Marius Alt; Andrea Blasco; Katharina Gangl},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
@@ -128,113 +184,96 @@
 }
 \makeatother
 \subtitle{Behavioural Interventions to Tackle the Energy Crisis}
-\author{Marius
-<<<<<<< HEAD
-Alt\thanks{European Commission, Joint Research Centre} \and Andrea
-Blasco\thanks{European Commission, Joint Research Centre} \and Katharina
-Gangl\thanks{Institute for Advanced Studies, Behavioural Economics Research Group; University of Vienna, Faculty of Psychology}}
+
+% \author{true \and true \and true}
+% See: https://labrtorian.com/tag/authblk/
+    \usepackage{authblk}
+                                        \author[1]{Marius Alt}
+                                                            \author[1]{Andrea
+Blasco}
+                                                            \author[2,3]{Katharina
+Gangl}
+                        
+    \usepackage{authblk}
+        \affil[1]{European Commission, Joint Research Centre}
+        \affil[2]{Institute for Advanced Studies, Behavioural Economics
+Research Group}
+        \affil[3]{University of Vienna, Faculty of Psychology}
+    
 \date{\today}
-=======
-Alt\thanks{European Commission, Joint Research Centre, Unit S4, Ispra} \and Andrea
-Blasco\thanks{European Commission, Joint Research Centre, Unit S1, Brussels} \and Katharina
-Gangl\thanks{University of Vienna}}
-\date{April 2023}
->>>>>>> 55a12151572c57028b743991e7b2b476dd43edf6
 
 \begin{document}
+ 
+% Place the book cover
+\newgeometry{margin=0pt}
+\begin{titlepage}
+    \thispagestyle{empty} % Remove page number on this page
+  
+    \vfill
+  
+    \centering
+    \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{cover_page.pdf}
+  
+    \vfill
+\end{titlepage}
+\restoregeometry
+
+% Add title page
+\newpage
 \maketitle
+\newpage
 
-% Fonts ... 
-\newcommand{\smallnotice}{\footnotesize} 
-\newcommand{\smallnoticebd}{\footnotesize\textbf}
-
-{
-\setcounter{tocdepth}{2}
-\tableofcontents
-}
-\clearpage
-
-\smallnotice This publication is a Technical Report by the Joint
-Research Centre (JRC), the European Commission's science and knowledge
-service. It aims to provide evidence-based scientific support to the
-European policymaking process. The scientific output expressed does not
-imply a policy position of the European Commission. Neither the European
-Commission nor any person acting on behalf of the Commission is
-responsible for the use that might be made of this publication. Users
-should contact the referenced source for information on the methodology
-and quality underlying the data used in this publication for which the
-source is neither Eurostat nor other Commission services. The
-designations employed and the presentation of material on the maps do
-not imply the expression of any opinion whatsoever on the part of the
-European Union concerning the legal status of any country, territory,
-city or area or its authorities or the delimitation of its frontiers or
-boundaries.
-
-\textbf{Contact Information}\\
-Corresponding Author: Andrea Blasco\\
-Email: andrea.blasco@ec.europa.eu\\
-Address: European Commission\\
-Joint Research Centre (JRC)\\
-Directorate S\\
-Unit S.1\\
-1049 Brussels\\
-BELGIUM
-
-\textbf{EU Science Hub}\\
-joint-research-centre.ec.europa.eu
-
-JRC133518\\
-Print: XXXXXX\\
-PDF: XXXXX
-
-@European Union, 2023
-
-\smallnotice The reuse policy of the European Commission is implemented
-by Commission Decision 2011/833/EU of 12 December 2011 on the reuse of
-Commission documents (OJ L 330, 14.12.2011, p.~39). Unless otherwise
-noted, the reuse of this document is authorised under the Creative
-Commons Attribution 4.0 International (CC BY 4.0) licence
-(https://creativecommons.org/ licenses/by/4.0). This means that reuse is
-allowed, provided appropriate credit is given, and any changes are
-indicated. For any use or reproduction of photos or other material that
-is not owned by the EU, permission must be sought directly from the
-copyright holders.
-
-\clearpage
-
-\hypertarget{abstract}{%
-\chapter*{Abstract}\label{abstract}}
-\addcontentsline{toc}{chapter}{Abstract}
-
+\begin{abstract}
 Energy crises and concerns about climate change call for a decisive
-shift in our daily behaviour at home and work. However, the public
-policies enabling this change require an accurate understanding of the
-behavioural factors influencing energy consumption in both spheres and
-how people respond in different contexts. This report reviews these
-factors concerning residential and workplace interventions to promote
-energy savings. It also spotlights the conditions under which
-interventions targeting one context could spill over to another setting.
-The analysis highlights the main similarities and differences between
-promoting energy savings at home and work, such as differences in
-financial incentives, awareness, cognitive barriers, free-riding
-problems, and peer interactions. The report also provides
-<<<<<<< HEAD
-recommendations for policies incorporating spillovers, such as promoting
-habits, a green identity, and peer influence. However, our academic
-literature review highlights the scope for more empirical studies on
-these topics.
-=======
-recommendations for policies that aim to incorporate spillovers, such as
-promoting habits, a green identity, and peer influence. However, our
-review of the academic literature highlights the scope for more
-empirical studies on these topics.
->>>>>>> 55a12151572c57028b743991e7b2b476dd43edf6
+shift in our daily behaviour at home and work. However, formulating
+public policies encouraging and facilitating this change presents
+considerable challenges. One key aspect is having an accurate
+understanding of the behavioural factors influencing energy consumption
+in residential and workplace settings and how people respond in
+different contexts. This report reviews these behavioural factors,
+discussing interventions to foster energy savings. It also spotlights
+the conditions under which interventions targeting one context could
+have an impact, `spillover', in another setting. The analysis highlights
+the main similarities and differences between promoting energy savings
+at home and work, such as differences in financial incentives,
+awareness, cognitive barriers, free-riding problems, and peer
+interactions. The report also provides recommendations for policies
+incorporating spillovers, such as promoting habits, a green identity,
+and peer influence.
+\end{abstract}
 
+\newpage 
+
+% Notice page here
+
+
+% Table of Contents
+\renewcommand*\contentsname{Table of Contents}
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage 
+
+% Line stretch 
+\setstretch{1.15}
+
+% Here is the main content ... 
 \hypertarget{introduction}{%
-\chapter{Introduction}\label{introduction}}
+\section{Introduction}\label{introduction}}
 
-Russia's invasion of Ukraine with the halt on energy supply imports from
-Russia has multiple effects on the path
+The path to climate neutral economy demands us to change habits. Since
+changing habits is hard, governemnts must promote the change with
+policies to foster energy savings and efficiency. These policies
+typically involve individual-level and structural measures, such as X, Y
+and Z. Events like Russia's invasion of Ukraine that create a sudden
+shock in the energy supply, demand short-term policies. Designing these
+policies can be challenging because (1) rising cost of energy (2)
+curtailment is costly, especially for poor, (3) disruption of the
+economy (4) economic uncertainty, etc. Behavioural interventions offer a
+solution that is inexpensive and fast.
+
+The halt on energy supply imports from Russia has multiple effects on
+the path
 \href{https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en}{to
 a climate-neutral European Union (EU)}. On the positive side, it forces
 the EU to diversify its energy sources, accelerating the transition to
@@ -252,10 +291,23 @@ objectives. Structural measures focus on achieving long-term effects,
 such as creating new infrastructures, while individual-level measures
 tend to have more immediate impacts.
 
+Russia's invasion has triggered two objectives --- (a) and (b). The
+European Commission has proposed that Member States adopt voluntary
+reductions and suggested a series of interventions to achieve these
+reductions. These interventions could be categorized into
+individual-level, such as xxxx, and structural, such as xxxx. The
+individual-level interventions were outlined in the Playing My Part
+campaign by the European Commission in collaboration with the IEA.
+
+Following this communication, all member States agreed to voluntarily
+reduce their energy consumption by XX\% and implemented various policies
+to achieve this goa. According to Bruegel, several ms used campaigns and
+\ldots{}
+
 This report examines individual-level measures from a behavioural
-perspective, discussing the potential for energy savings and design
-issues. By doing so, we aim to address the following questions: What
-strategies can governments employ to incentivise individuals and
+perspective, discussing the potential for energy savings and efficiency
+improvements. By doing so, we aim to address the following questions:
+What strategies can governments employ to incentivise individuals and
 businesses to conserve energy without enforcing expensive restrictions
 on energy usage? What first line of action can governments implement,
 and what are the possible long-term effects?
@@ -279,10 +331,6 @@ consumption per square meter than private households
 Therefore, office space interventions could be relatively more
 effective. At the same time, research suggests that people tend to
 internalise better the benefits of saving energy at home than at work.
-
-\awesomebox{5pt}{\faQuoteLeft}{magenta}{
-    Lorem ipsum...
-}
 
 Perusing numerous experimental studies on behavioural interventions
 promoting energy conservation, we provide a roadmap identifying
@@ -321,9 +369,8 @@ uniform policy interventions to better account for possible spillover
 effects between the two spheres (Section \ref{sec:spillovers}).
 
 \hypertarget{sec:home}{%
-\chapter{Saving energy at home}\label{sec:home}}
+\section{Saving energy at home}\label{sec:home}}
 
-<<<<<<< HEAD
 \begin{keypoints}
 \begin{itemize}[leftmargin=*,labelsep=5mm]
     \item Policy interventions can promote changing behaviour at home or encouraging investment in energy-efficient appliances and home renovations.
@@ -334,16 +381,23 @@ effects between the two spheres (Section \ref{sec:spillovers}).
 \end{itemize}
 \end{keypoints}
 
+\begin{figure}
+\centering
+\includegraphics{Images/playingmypart-infographic.png}
+\caption{Infographic from the ``Playing My Part'' information campaign
+by the IEA and European Commission}
+\end{figure}
+
 Two different types of policy interventions promote energy savings among
 households. The first approach involves encouraging families to change
 their energy consumption behaviours, like turning off lights and
-=======
-Two different types of policy interventions promote energy savings among
-households. The first approach involves encouraging individuals to
-change their energy consumption behaviours, like turning off lights and
->>>>>>> 55a12151572c57028b743991e7b2b476dd43edf6
 appliances when not used, cooking more efficiently, and reducing the use
-of heating and cooling systems.
+of heating and cooling systems. Two different types of policy
+interventions promote energy savings among households. The first
+approach involves encouraging individuals to change their energy
+consumption behaviours, like turning off lights and appliances when not
+used, cooking more efficiently, and reducing the use of heating and
+cooling systems.
 
 The second approach involves stimulating purchases of energy-efficient
 technologies, such as replacing traditional incandescent bulbs with new
@@ -393,7 +447,6 @@ reduce their energy consumption.
 \begin{keypoints}
 Classical explanations for the Energy Paradox
 \begin{itemize}
-<<<<<<< HEAD
 
 \item \textbf{Information barriers} Families face multiple barriers either in accessing information or absorbing it. For example, a study, based on a survey of Dutch households, shows that only about half of respondents are aware of their monthly charges for energy consumption, and only 40% understand the correct trade-off between different investment decisions in energy equipment [@brounen2013energy].
 
@@ -401,29 +454,6 @@ Classical explanations for the Energy Paradox
 
 \item \textbf{Heterogeneity in consumption}. Households are widely heterogeneous concerning their energy consumption patterns. Thus, even if a technology (or behaviour) is profitable on *average*, it may remain unattractive for a large portion of the population.
 
-=======
-\item
-  \textbf{Information barriers}. Households face multiple barriers
-  either in accessing information or absorbing it. For example, a study,
-  based on a survey of Dutch households, shows that only about half of
-  respondents are aware of their monthly charges for energy consumption,
-  and only 40\% understand the correct trade-off between different
-  investment decisions in energy equipment
-  (\protect\hyperlink{ref-brounen2013energy}{Brounen, Kok, and Quigley
-  2013}).
-\item
-  \textbf{Time discounting}. Investments in energy efficiency or
-  behavioural changes involve immediate costs (i.e., the cost of
-  installation) and delayed rewards (i.e., lower electricity bills).
-  However, if individuals heavily discount the future benefits they will
-  obtain by switching to more energy-efficient actions, they would
-  rather spend their time or money elsewhere today.
-\item
-  \textbf{Heterogeneity in consumption}. Households are widely
-  heterogeneous concerning their energy consumption patterns. Thus, even
-  if a technology (or behaviour) is profitable on \emph{average}, it may
-  remain unattractive for a large portion of the population.
->>>>>>> 55a12151572c57028b743991e7b2b476dd43edf6
 \end{itemize}
 \end{keypoints}
 
@@ -478,7 +508,7 @@ challenges and effectiveness of other solutions.
 Table \ref{tab:households} summarises the interventions discussed below.
 
 \hypertarget{information-nudges-and-energy-labels}{%
-\section{Information nudges and energy
+\subsection{Information nudges and energy
 labels}\label{information-nudges-and-energy-labels}}
 
 Information Nudges is a term used to describe policies sending
@@ -521,7 +551,7 @@ expenses more salient, thus helping households to overcome
 time-inconsistent decision patterns.
 
 \hypertarget{energy-one-stop-shops}{%
-\section{Energy one-stop shops}\label{energy-one-stop-shops}}
+\subsection{Energy one-stop shops}\label{energy-one-stop-shops}}
 
 One-stop shops are agencies that aim to offer integrated solutions and
 customer-centric services that simplify the decisional process for the
@@ -538,7 +568,7 @@ studies have been identified and analysed in Europe
 providing early evidence of their effectiveness.
 
 \hypertarget{individual-feedback-and-goal-setting}{%
-\section{Individual feedback and goal
+\subsection{Individual feedback and goal
 setting}\label{individual-feedback-and-goal-setting}}
 
 Personalised feedback promotes energy savings by informing households of
@@ -565,7 +595,7 @@ the effect sizes can vary considerably, suggesting that contextual
 factors influence the success of policy implementation.
 
 \hypertarget{intrinsic-motivations-and-social-norms}{%
-\section{Intrinsic motivations and social
+\subsection{Intrinsic motivations and social
 norms}\label{intrinsic-motivations-and-social-norms}}
 
 In addition to providing information in an easily understandable manner
@@ -590,7 +620,8 @@ effectiveness of this approach in promoting energy savings
 2021}).
 
 \hypertarget{warnings-and-fact-checking}{%
-\section{Warnings and fact-checking}\label{warnings-and-fact-checking}}
+\subsection{Warnings and
+fact-checking}\label{warnings-and-fact-checking}}
 
 Misinformation is an obstacle to energy savings and environmentally
 conscious behaviours, like other informational barriers. For example,
@@ -657,8 +688,8 @@ misinformation about climate change, the risks of nuclear power, etc. \\
 \end{longtable}
 
 \hypertarget{takeaways}{%
-\subsection*{Takeaways}\label{takeaways}}
-\addcontentsline{toc}{subsection}{Takeaways}
+\subsubsection*{Takeaways}\label{takeaways}}
+\addcontentsline{toc}{subsubsection}{Takeaways}
 
 \begin{itemize}
 \item
@@ -683,7 +714,7 @@ misinformation about climate change, the risks of nuclear power, etc. \\
 \end{itemize}
 
 \hypertarget{sec:work}{%
-\chapter{Saving energy at work}\label{sec:work}}
+\section{Saving energy at work}\label{sec:work}}
 
 \begin{keypoints}
 \begin{itemize}[leftmargin=*,labelsep=5mm]
@@ -695,42 +726,14 @@ misinformation about climate change, the risks of nuclear power, etc. \\
 \end{itemize}
 \end{keypoints}
 
-As for households, policy interventions can either focus on reducing
-energy usage by changing the behaviour of employees and staff members or
-encourage the management to invest in energy-efficient technologies and
-practices. This report focuses on interventions to motivate workers to
-change their energy behaviour at work. Public policies stimulating firms
-to invest in energy efficiency solutions or green practices have been
-widely discussed, e.g., DeCanio and Watkins
-(\protect\hyperlink{ref-decanio1998investment}{1998}). However, these
-policies are part of a long-term strategy, while this report focuses on
-first-line-of-action interventions.
+The focus on interventions stimulating behavioural change at work is
+partly motivated by evidence showing that employee behaviour
+significantly impacts the energy consumption of commercial buildings
+(\protect\hyperlink{ref-azar2014comprehensive}{Azar and Menassa 2014}).
+At the same time, other evidence shows that, while at work, people make
+fewer energy conservation actions than at home
+(\protect\hyperlink{ref-lin2019mixing}{Lin and Azar 2019}).
 
-Evidence shows that employee behaviour significantly impacts the energy
-consumption of commercial buildings
-(\protect\hyperlink{ref-azar2014comprehensive}{Azar and Menassa 2014})
-and that people at work make fewer energy conservation actions than at
-home (\protect\hyperlink{ref-lin2019mixing}{Lin and Azar 2019}).
-
-The literature highlights two reasons for less energy conservation at
-work: incentives and direct control. Compared to at home, people at work
-typically have weak incentives to save energy as there is no personal
-cost involved if energy is wasted (for instance, when one forgets to
-turn off the heating, the lights, or the computer when leaving the
-office). Also, at work, many energy systems are centralised. Therefore,
-employees may feel they have no direct control over the energy
-consumption. Consequently, whereas centralised systems can help facility
-managers monitor the building and generate energy savings, these systems
-might also prevent individuals from feeling responsible for
-energy-saving actions.
-
-<<<<<<< HEAD
-As solutions, personal rewards, organisational support, and addressing
-intrinsic motivations can be effective strategies to achieve energy
-savings at work. Rewards are used, for example, by transportation
-companies that reward their drivers with cash bonuses or vouchers for
-consuming less fuel than predetermined levels
-=======
 One reason for fewer energy conservation actions at work is that
 employees typically have weak incentives to save energy in the
 workplace. People are better off in warm rather than cold offices, using
@@ -750,20 +753,29 @@ One possible solution is to offer rewards when staff achieves specific
 energy-saving goals at the individual or organisational level. For
 example, transportation companies often reward their drivers with cash
 bonuses or vouchers for consuming less fuel than predetermined levels
->>>>>>> 55a12151572c57028b743991e7b2b476dd43edf6
 (\protect\hyperlink{ref-schall2017incentivizing}{Schall and Mohnen
-2017}). However, such individual compensation schemes depend on an
-organisation's ability to track individual energy consumption and design
-rewards aligning with productivity goals. In surveys, employees suggest
-that organisations can support saving energy by creating more
-opportunities for energy-saving actions, assigning clear
-responsibilities, and reserving time
+2017}). However, such compensation schemes can clash with productivity
+goals when, for example, organisations cannot track individual energy
+consumption for technical or privacy reasons, and employees have the
+incentive to free-ride on each other.
+
+Other solutions could involve adequate organisational support or
+creating new opportunities for energy conservation actions. Research
+based on surveys suggests that employees view the lack of financial
+incentives for energy savings as less of a factor than missing
+organisational support, limited opportunities for energy conservation,
+little time, or even confusion about who has the assigned responsibility
+to initiate energy savings
 (\protect\hyperlink{ref-li2019understanding}{Li et al. 2019};
 \protect\hyperlink{ref-staddon2016intervening}{Staddon et al. 2016}).
-Additionally, addressing employees' intrinsic motivations to save
-energy, such as environmental concerns, warm-glow feelings or concerns
-for the organisation's mission and image, might increase employees'
-energy saving (\protect\hyperlink{ref-leygue2017saving}{Leygue,
+
+Additionally, intrinsic motivations, such as environmental concerns or
+for the organisation's mission and image, and warm-glow feelings can
+partially compensate for the lack of incentives or organisational
+support. Several studies have shown that people are willing to
+contribute to the workplace environment because of their intrinsic
+motivations, which are fundamental to leading employees to save energy
+in the workplace (\protect\hyperlink{ref-leygue2017saving}{Leygue,
 Ferguson, and Spence 2017}).
 
 However, the drivers of energy use in the workplace still need to be
@@ -775,32 +787,13 @@ energy-use behaviour in the workplace
 These interventions can be broadly grouped into three main categories,
 as in Table \ref{tab:firms}. Below, we discuss a few examples.
 
-<<<<<<< HEAD
 \hypertarget{information-social-norms-and-peer-education}{%
-\section{Information, Social Norms, and Peer
+\subsection{Information, Social Norms, and Peer
 Education}\label{information-social-norms-and-peer-education}}
-=======
-Here, we review three main categories of interventions as in Table
-\ref{tab:firms}.
 
-\hypertarget{information-social-norms-and-peer-education}{%
-\section{Information, social norms, and peer
-education}\label{information-social-norms-and-peer-education}}
->>>>>>> 55a12151572c57028b743991e7b2b476dd43edf6
-
-As for the residential sector, several studies have investigated
-information nudges to give employees feedback on their energy
-consumption patterns via emails and visualisations of energy data, such
-as live dashboards. These interventions often aim to activate social
-norms via comparative feedback across departments or groups of
-colleagues and can take various forms. Staddon et al.
-(\protect\hyperlink{ref-staddon2016intervening}{2016}) provide a
-systematic review of feedback interventions delivered through various
-media (postcards, posters, leaflets, emails) in one shot or repeated.
-Some of these interventions combine feedback with gamification. Examples
-include mobile video games based on actual energy use data
-(\protect\hyperlink{ref-oppong2020developing}{Oppong-Tawiah et al.
-2020}).
+\hypertarget{information-social-norms-peer-education}{%
+\subsection{Information, social norms, \& peer
+education}\label{information-social-norms-peer-education}}
 
 Field experiments evaluated the effectiveness of comparative feedback.
 For example, Carrico and Reimer
@@ -827,29 +820,15 @@ results showed that the algorithm recommendations promoted coordination
 and produced significant energy savings.
 
 \hypertarget{monetary-and-non-monetary-rewards}{%
-\section{Monetary and non-monetary
+\subsection{Monetary and non-monetary
 rewards}\label{monetary-and-non-monetary-rewards}}
 
-Several studies have shown that non-monetary incentives, such as games
-and competitions awarding employees virtual points, can effectively
-decrease energy consumption
+Several studies have shown that non-monetary rewards, including
+vouchers, public social reward points
 (\protect\hyperlink{ref-handgraaf2013public}{Handgraaf, De Jeude, and
-<<<<<<< HEAD
-Appelt 2013}; \protect\hyperlink{ref-orland2014saving}{Orland et al.
-2014}). For example, one study tested a points-based system to encourage
-energy-saving actions at work, resulting in the active participation of
-approximately 60\% of employees and a substantial reduction in energy
-consumption (\protect\hyperlink{ref-kuntz2012many}{Kuntz, Shukla, and
-Bensch 2012}). Another study employed a
-\href{https://en.wikipedia.org/wiki/Serious_game}{Serious Game} called
-Energy Chickens, where participants earned virtual eggs by saving
-energy, which they could use to purchase accessories for a virtual farm.
-While this intervention led to significant energy savings, the effects
-did not persist beyond the game's duration
-=======
 Appelt 2013}), serious games
 (\protect\hyperlink{ref-orland2014saving}{Orland et al. 2014}) or the
-possibility of winning a competition can reduce energy consumption. For
+possibility of winning a competition, can reduce energy consumption. For
 example, a study testing the promotion of energy saving based on points
 engaged about 60\% of employees, leading to a substantial reduction in
 energy consumption (\protect\hyperlink{ref-kuntz2012many}{Kuntz, Shukla,
@@ -859,26 +838,15 @@ In a serious game called ``Energy Chickens'', energy saving measured
 through plug-in sensors earned participants eggs with which they could
 purchase accessories in a virtual farm. The intervention led to
 significant energy savings; however, the effects did not seem to last
-beyond the game duration
->>>>>>> 55a12151572c57028b743991e7b2b476dd43edf6
+beyond duration of the game
 (\protect\hyperlink{ref-orland2014saving}{Orland et al. 2014}).
-Likewise, a large-scale competition involving 500 Italian bank branches,
-offering small material rewards, successfully decreased energy
-consumption (\protect\hyperlink{ref-fanghella2022evaluating}{Fanghella,
-D'Adda, and Tavoni 2022}).
-
-While competitions and virtual rewards effectively decrease energy
-consumption, low-powered monetary incentives, like offering small cash
-rewards, rarely show an effect, and when they do, the effects are only
-short-lived (\protect\hyperlink{ref-handgraaf2013public}{Handgraaf, De
-Jeude, and Appelt 2013};
-\protect\hyperlink{ref-schall2017incentivizing}{Schall and Mohnen
-2017}). This evidence suggests that achieving consistent and significant
-workplace energy savings requires more than low-powered monetary
-incentives.
+Similarly, a large-scale competition involving small material rewards
+among 500 Italian bank branches also reduced energy consumption
+(\protect\hyperlink{ref-fanghella2022evaluating}{Fanghella, D'Adda, and
+Tavoni 2022}).
 
 \hypertarget{default-settings-and-automation}{%
-\section{Default Settings and
+\subsection{Default Settings and
 Automation}\label{default-settings-and-automation}}
 
 Introducing defaults and automation can significantly impact energy
@@ -896,7 +864,6 @@ the defaults (\protect\hyperlink{ref-brown2013testing}{Brown et al.
 2013}).
 
 Another issue is how defaults could create a differential impact among
-<<<<<<< HEAD
 employees. In response to the current energy crisis caused by Russia's
 invasion of Ukraine, many local and national governments defaulted 19
 degrees in public buildings to save gas consumption. However, while
@@ -905,83 +872,7 @@ evidence suggests that this decision may negatively affect workers with
 special needs and ignores individual perceptions of temperature and
 comfort.
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3194}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6806}}@{}}
-\caption{Interventions promoting energy conservation at work
-\label{tab:firms}}\tabularnewline
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Intervention}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Definition}
-\end{minipage} \\
-\midrule()
-\endfirsthead
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Intervention}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Definition}
-\end{minipage} \\
-\midrule()
-\endhead
-\textbf{~} & ~ \\
-\textbf{Feedback} & Targeted feedback (hints, suggestions, performance,
-etc.) to enable individuals to reflect and adapt their behaviour. \\
-\textbf{~} & ~ \\
-\textbf{Explicit incentives} & Increase motivation by awarding people
-monetary or non-monetary rewards \\
-\textbf{~} & ~ \\
-\textbf{Defaults \& automation} & Exploits the tendency of people to
-generally accept the default option in a specific situation. \\
-\bottomrule()
-\end{longtable}
-
-=======
-employees. In response to the current energy crisis, many local and
-national governments defaulted 19 degrees in public buildings to save
-gas consumption. However, while studies on the effectiveness of this
-default are rare, anecdotal evidence suggests that this decision may
-negatively affect workers with special needs and ignores individual
-perceptions of temperature and comfort.
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3108}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6622}}@{}}
-\caption{Interventions promoting energy conservation at work
-\label{tab:firms}}\tabularnewline
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Intervention}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Definition}
-\end{minipage} \\
-\midrule()
-\endfirsthead
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Intervention}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Definition}
-\end{minipage} \\
-\midrule()
-\endhead
-\textbf{~} & ~ \\
-\textbf{Feedback} & Targeted feedback (hints, suggestions, performance,
-etc.) to enable individuals to reflect and adapt their own behaviour. \\
-\textbf{~} & ~ \\
-\textbf{Explicit incentives} & Increase motivation by awarding people
-monetary or non-monetary rewards \\
-\textbf{~} & ~ \\
-\textbf{Defaults \& automation} & Exploits the tendency of people to
-generally accept the default option in a certain situation. \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{takeaways-1}{%
-\subsection*{Takeaways}\label{takeaways-1}}
-\addcontentsline{toc}{subsection}{Takeaways}
+\textbf{Takeaways}
 
 \begin{itemize}
 \item
@@ -1012,9 +903,41 @@ generally accept the default option in a certain situation. \\
   \end{itemize}
 \end{itemize}
 
->>>>>>> 55a12151572c57028b743991e7b2b476dd43edf6
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3194}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6806}}@{}}
+\caption{Intereventions promoting energy conservation at work
+\label{tab:firms}}\tabularnewline
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Intervention}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Definition}
+\end{minipage} \\
+\midrule()
+\endfirsthead
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Intervention}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Definition}
+\end{minipage} \\
+\midrule()
+\endhead
+\textbf{~} & ~ \\
+\textbf{Feedback} & Targeted feedback (hints, suggestions, performance,
+etc.) to enable individuals to reflect and adapt their behaviour. \\
+\textbf{~} & ~ \\
+\textbf{Explicit incentives} & Increase motivation by awarding people
+monetary or non-monetary rewards \\
+\textbf{~} & ~ \\
+\textbf{Defaults \& automation} & Exploits the tendency of people to
+generally accept the default option in a specific situation. \\
+\bottomrule()
+\end{longtable}
+
 \hypertarget{sec:spillovers}{%
-\chapter{Spillovers and Peer Effects}\label{sec:spillovers}}
+\section{Spillovers and Peer Effects}\label{sec:spillovers}}
 
 \begin{tcolorbox}[colback=yellow!10,colframe=black]
 \textbf{Key Points: Spillovers and Peer Effects}
@@ -1143,7 +1066,7 @@ interventions. While the discussion continues, we examine key levers
 widely studied in the literature as discussed below.
 
 \hypertarget{habit-formation}{%
-\section{Habit formation}\label{habit-formation}}
+\subsection{Habit formation}\label{habit-formation}}
 
 Social psychologists define a habit as a settled routine or regular
 tendency triggered by exposure to the same environmental cues, for
@@ -1170,7 +1093,7 @@ results on energy conservation that continue over time
 \protect\hyperlink{ref-jessoe2014knowledge}{Jessoe and Rapson 2014}).
 
 \hypertarget{identity}{%
-\section{Identity}\label{identity}}
+\subsection{Identity}\label{identity}}
 
 One way to leverage contextual spillovers is through interventions
 encouraging people to adopt a green identity. If people consider
@@ -1193,7 +1116,7 @@ pro-environmental identity
 2019}).
 
 \hypertarget{commitment-to-the-cause}{%
-\section{Commitment to the cause}\label{commitment-to-the-cause}}
+\subsection{Commitment to the cause}\label{commitment-to-the-cause}}
 
 Committing to engage pro-environmentally can positively affect
 spillovers. Such a commitment can occur in the form of pledges but also
@@ -1213,7 +1136,7 @@ This shows that commitments in pledges and actions can act as a ``foot
 in the door'', helping people to focus on a specific goal or objective.
 
 \hypertarget{moral-licensing}{%
-\section{Moral licensing}\label{moral-licensing}}
+\subsection{Moral licensing}\label{moral-licensing}}
 
 Contextual spillovers can also be harmful to energy conservation. For
 example, a policy that targets household energy savings may succeed in
@@ -1256,7 +1179,7 @@ Sydnor 2015}; \protect\hyperlink{ref-alt2022incentives}{Alt and Gallier
 2022}).
 
 \hypertarget{peer-effects}{%
-\section{Peer effects}\label{peer-effects}}
+\subsection{Peer effects}\label{peer-effects}}
 
 Policies can influence social dynamics, such as peer effects, to trigger
 savings in energy consumption. For example, one intervention could
@@ -1320,9 +1243,9 @@ probability of conducting behaviour A by another person. \\
 \bottomrule()
 \end{longtable}
 
-\hypertarget{takeaways-2}{%
-\subsection*{Takeaways}\label{takeaways-2}}
-\addcontentsline{toc}{subsection}{Takeaways}
+\hypertarget{takeaways-1}{%
+\subsubsection*{Takeaways}\label{takeaways-1}}
+\addcontentsline{toc}{subsubsection}{Takeaways}
 
 \begin{itemize}
 \item
@@ -1342,7 +1265,7 @@ probability of conducting behaviour A by another person. \\
 \end{itemize}
 
 \hypertarget{conclusion}{%
-\chapter{Conclusion and recommendations}\label{conclusion}}
+\section{Conclusion and recommendations}\label{conclusion}}
 
 Behavioural interventions have great potential to support policymakers
 during energy crises, as they can be implemented quickly and
@@ -1422,8 +1345,8 @@ consider these contextual factors and help policymakers design more
 effective interventions tailored to specific contexts.
 
 \hypertarget{acknowledgements}{%
-\chapter*{Acknowledgements}\label{acknowledgements}}
-\addcontentsline{toc}{chapter}{Acknowledgements}
+\section*{Acknowledgements}\label{acknowledgements}}
+\addcontentsline{toc}{section}{Acknowledgements}
 
 We thank Nives Della Valle for her thoughtful comments and early
 contributions to this technical report. The report also benefited from
@@ -1431,8 +1354,8 @@ comments from Paolo Bertoldi, Emanuele Ciriolo, Marion Dupoux, and Colin
 Kuehnhanss.
 
 \hypertarget{references}{%
-\chapter*{References}\label{references}}
-\addcontentsline{toc}{chapter}{References}
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
@@ -1531,11 +1454,6 @@ Psychology} 31 (1): 1--13.
 Craig, C Samuel, and John M McCann. 1978. {``Assessing Communication
 Effects on Energy Conservation.''} \emph{Journal of Consumer Research} 5
 (2): 82--88.
-
-\leavevmode\vadjust pre{\hypertarget{ref-decanio1998investment}{}}%
-DeCanio, Stephen J, and William E Watkins. 1998. {``Investment in Energy
-Efficiency: Do the Characteristics of Firms Matter?''} \emph{Review of
-Economics and Statistics} 80 (1): 95--107.
 
 \leavevmode\vadjust pre{\hypertarget{ref-dellavalle2020nudging}{}}%
 DellaValle, Nives, and Siddharth Sareen. 2020. {``Nudging and Boosting
@@ -1705,12 +1623,6 @@ of Proenvironmental Behavior Change: A Comparative Study of Intervention
 Processes at Home and Work.''} \emph{Journal of Industrial Ecology} 14
 (1): 137--49.
 
-\leavevmode\vadjust pre{\hypertarget{ref-oppong2020developing}{}}%
-Oppong-Tawiah, Divinus, Jane Webster, Sandy Staples, Ann-Frances
-Cameron, Ana Ortiz de Guinea, and Tam Y Hung. 2020. {``Developing a
-Gamified Mobile Application to Encourage Sustainable Energy Use in the
-Office.''} \emph{Journal of Business Research} 106: 388--405.
-
 \leavevmode\vadjust pre{\hypertarget{ref-oreskes2004scientific}{}}%
 Oreskes, Naomi. 2004. {``The Scientific Consensus on Climate Change.''}
 \emph{Science} 306 (5702): 1686--86.
@@ -1798,4 +1710,5 @@ Influence on Household Energy Behaviours.''} \emph{Nature Energy} 5 (3):
 
 \end{CSLReferences}
 
+% Biblio 
 \end{document}

@@ -11,6 +11,9 @@
 \end{itemize}
 \end{keypoints}
  
+
+![Infographic from the "Playing My Part" information campaign by the IEA and European Commission](Images/playingmypart-infographic.png)
+
 <!-- 
 Policy interventions to promote energy savings at home can be of two types: behaviour change and adoption of energy-efficient technologies.
 The "Playing My Part" campaign by the European Commission combined both approaches to address rising energy costs after Russia's invasion of Ukraine.
@@ -40,17 +43,16 @@ On the other hand, many studies have shown that, despite receiving basic informa
 \begin{keypoints}
 Classical explanations for the Energy Paradox
 \begin{itemize}
+\item \textbf{Information barriers} Families face multiple barriers in accessing or absorbing information. For example, a representative survey of Dutch households shows that only about half of respondents are aware of their monthly charges for energy consumption, and only 40\% understand the correct trade-off between different investment decisions in energy equipment [@brounen2013energy].
 
-\item \textbf{Information barriers} Families face multiple barriers either in accessing information or absorbing it. For example, a study, based on a survey of Dutch households, shows that only about half of respondents are aware of their monthly charges for energy consumption, and only 40% understand the correct trade-off between different investment decisions in energy equipment [@brounen2013energy].
-
-\item \textbf{Time discounting} Investments in energy efficiency and, to some extent, significant behavioural changes involve individual costs. These costs are typically immediate (i.e., installation expenses) offering only delayed rewards (i.e., lower electricty bills). However, if families heavily discount the future, they would rather spend their time or money elsewhere today.
+\item \textbf{Time discounting} Investments in energy efficiency and, to some extent, significant behavioural changes involve individual costs. These costs are typically immediate (i.e., installation expenses), offering only delayed rewards (i.e., lower electricity bills). However, if families heavily discount the future, they would rather spend their time or money elsewhere today.
 
 \item \textbf{Heterogeneity in consumption}. Households are widely heterogeneous concerning their energy consumption patterns. Thus, even if a technology (or behaviour) is profitable on *average*, it may remain unattractive for a large portion of the population.
 
 \end{itemize}
 \end{keypoints}
 
-The above explanations assume that individuals would make optimal decisions if they had more information about costs and benefits or if the market offered them more personalized solutions to save energy. However, much psychology and behavioural economics evidence have challenged these assumptions because people do not typically make optimal decisions, if under the best conditions. On the contrary, individuals often act as if they were predictably "irrational" or biased. 
+Classical explanations for this paradox (see the Box) assume that individuals would make optimal decisions if they had more information about costs and benefits or if the market offered them more personalised solutions to save energy. However, much psychology and behavioural economics evidence have challenged these assumptions because people do not typically make optimal decisions if under the best conditions. On the contrary, individuals often act as if they were predictably "irrational" or biased. 
 
 Based on such evidence, other explanations for the Energy Paradox have emerged. Here, we provide two examples: 
 
