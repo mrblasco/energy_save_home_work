@@ -1,7 +1,7 @@
 # Saving energy at home {#sec:home}
 
-<!-- Section highlights -->
-\begin{keypoints}
+<!-- Section highlights
+\begin{keypoints}{Title}
 \begin{itemize}[leftmargin=*,labelsep=5mm]
     \item Policy interventions can promote changing behaviour at home or encouraging investment in energy-efficient appliances and home renovations.
     \item Employee behaviour significantly impacts energy consumption in commercial buildings, with lower energy conservation at work than at home.
@@ -10,9 +10,7 @@
     \item Further research is needed to understand the drivers of energy use in the workplace, but various interventions have been tested.
 \end{itemize}
 \end{keypoints}
- 
-
-![Infographic from the "Playing My Part" information campaign by the IEA and European Commission](Images/playingmypart-infographic.png)
+  -->
 
 <!-- 
 Policy interventions to promote energy savings at home can be of two types: behaviour change and adoption of energy-efficient technologies.
@@ -21,18 +19,20 @@ The Energy Paradox explains why households often do not adopt energy-saving prac
 Information nudges and energy labels effectively promote energy savings by providing easy-to-understand information and making long-term impacts more salient.
 One-stop shops, individual feedback with goal setting, intrinsic motivations and social norms, and warnings and fact-checking are additional interventions that encourage energy conservation at home. -->
 
-Two different types of policy interventions promote energy savings among households. The first approach involves encouraging families to change their energy consumption behaviours, like turning off lights and appliances when not used, cooking more efficiently, and reducing the use of heating and cooling systems.
-Two different types of policy interventions promote energy savings among households. The first approach involves encouraging individuals to change their energy consumption behaviours, like turning off lights and appliances when not used, cooking more efficiently, and reducing the use of heating and cooling systems.
+<!-- The need for an integration of engineering, economic and behavioural perspectives has relatively long history, reaching back to at least the 1980. -->
 
-The second approach involves stimulating purchases of energy-efficient technologies, such as replacing traditional incandescent bulbs with new LED ones, buying energy-efficient appliances, and installing "smart" home systems. Long-term strategies can also foster investments in home renovations, from small renovations like replacing old windows to reduce heat loss in the winter to installing photovoltaic panels.
+Policy interventions promoting energy conservation among households aim to raise awareness of the benefits of energy savings and promote energy efficiency. These policies encourage families to change their energy consumption behaviours, like switching off lights and appliances when not in use, cooking more efficiently, and minimising the use of heating and cooling systems. Moreover, energy-saving policies incentivise replacing outdated appliances, such as substituting traditional incandescent bulbs with modern LED ones, purchasing energy-efficient devices, and integrating "smart" home systems for monitoring home energy consumption. In addition, long-term strategies can facilitate investments in home improvements, ranging from minor enhancements like upgrading old windows to reduce heat loss during winter to installing photovoltaic panels for generating solar energy.
 
-In 2022, the European Commission combined both approaches in the "Playing My Part" information campaign, launched in response to the rising energy costs for families after Russia invaded Ukraine.[^playing-my-part]
+Information campaigns to raise awareness of energy-saving opportunities have a long history and reach back to the initial global "energy crisis" experienced in the 1970s. However, early research highlighted a significant challenge in these campaigns, stating that despite promoting energy conservation through large-scale information dissemination, only a minority of individuals responded positively. This 'weak adoption' was attributed to the inherent difficulties associated with processing the provided information and psychological factors, as indicated by @coltrane1986social, among others. 
+
+Today, experts agree that successful energy-saving programs must consider economic and behavioural factors. This realisation can be traced back to the research conducted by @shama1983energy, who emphasised the need to integrate these crucial elements into energy conservation initiatives. And there is a large literature on this topic. 
+
+More recently, the European Commission and IEA launched the ["Playing My Part" information campaign](https://www.iea.org/reports/playing-my-part) in response to Russia's invasion of Ukraine and halt on Russian imports of energy supplies ensuing it.
 
 This campaign urged households, first and foremost, to adopt small changes in their everyday energy consumption, such as adjusting their boiler settings, turning down heating, using less air-conditioning, and driving their cars more economically. Secondly, it also encouraged households to switch to energy-efficient technologies, such as purchasing electric heat pumps or installing programmable "smart" thermostats, while asking Member States to intensify the efforts to facilitate the process.
 
-[^playing-my-part]:
-    Information about the Playing My Part campaign is available at:
-    <https://www.iea.org/reports/playing-my-part> [accessed December 21, 2022].
+![Infographic from the "Playing My Part" information campaign by the IEA and European Commission](Images/playingmypart-infographic.png)
+
 
 However, it is difficult to anticipate how information campaigns like "Playing My Part" can influence people to reduce their energy consumption during a crisis.
 
