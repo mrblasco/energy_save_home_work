@@ -420,7 +420,7 @@ $else$
 \usepackage{etoolbox}
 \makeatletter
 \providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+  \apptocmd{\@title}{\par {\LARGE #1 \par}}{}{}
 }
 \makeatother
 $endif$
@@ -490,6 +490,8 @@ $if(toc-title)$
 \renewcommand*\contentsname{$toc-title$}
 $endif$
 \tableofcontents
+\clearpage
+
 \listoffigures
 \listoftables
 \clearpage 

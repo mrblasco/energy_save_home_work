@@ -5,6 +5,12 @@
   %, showframe
 }
 
+% Links
+\usepackage[]{hyperref}
+\hypersetup{colorlinks=true,}
+\usepackage{tabularx}
+\usepackage{multirow}
+
 % Fonts
 \usepackage{fontspec}
 \setmainfont{Optima}
@@ -12,27 +18,42 @@
 % Add packages
 \usepackage{awesomebox}
 
-% Table with colors
-\definecolor{headercolor}{RGB}{237, 237, 237} % Define color for header row
-\definecolor{rowcolor}{RGB}{245, 245, 245} % Define color for alternate rows
-\definecolor{blueEC}{HTML}{004494} % Define color for alternate rows
+% Define colors
+\definecolor{blueEC}{HTML}{004494}
+
+\usepackage{sectsty}
+\sectionfont{\color{blueEC}}  % sets colour of chapters
+\subsectionfont{\color{blueEC!80}}  % sets colour of chapters
+\subsubsectionfont{\color{blueEC!60}}  % sets colour of chapters
 
 % Create highlight boxes
-\usepackage{tcolorbox}
+\usepackage[most]{tcolorbox}
 \usepackage{enumitem}
 
 % Custom key points textbox
-\newtcolorbox{keypoints}{colback=gray!10,
-    colframe=gray!80,
-    arc=0pt,
-    boxrule=0.5pt,
-    fonttitle=\bfseries,
-    title=Key Points
+% https://tex.stackexchange.com/questions/527396/display-number-in-tcolorbox-like-the-auto-number-in-equation
+\newtcolorbox[auto counter, number within=section]{keypoints}[2][]{
+    colback     =   blueEC!10,
+    colframe    =   blueEC!80,
+    arc         =   0pt,
+    boxrule     =   0.5pt,
+    fonttitle   =   \bfseries,
+    title       = Box~\thetcbcounter: #2, #1,
 }
 
+% Custom table textbox
+% https://tex.stackexchange.com/questions/527396/display-number-in-tcolorbox-like-the-auto-number-in-equation
+\newtcolorbox[]{tablebox}[2][]{
+    colback     =   blueEC!10,
+    colframe    =   blueEC!80,
+    arc         =   0pt,
+    boxrule     =   0.5pt,
+    fonttitle   =   \bfseries,
+    title       = ,
+}
 
 % Notice and Title page 
-% ~~~~~~~~~~~~~~~~~~~~`' 
+% ~~~~~~~~~~~~~~~~~~~~
 \makeatletter
 \renewcommand{\maketitle}{%
     \begin{titlepage}
@@ -44,7 +65,7 @@
         
         \textbf{Contact Information:}
         
-        Name: Andrea Blasco\\
+        Corresponding author: Andrea Blasco\\
         Email: andrea.blasco@ec.europa.eu\\
         Address: European Commission, JRC, Directorate S, Unit S.1, Brussels, Belgium\\
         
@@ -65,9 +86,9 @@
         \clearpage 
         \topskip=120pt
         \begin{center}
-            \textbf{\LARGE \@title}
+            \textbf{\color{blueEC}\Huge\@title}
             \vspace{60pt}
-            \@date
+            {\Large\@date}
         \end{center}
     
         \vfill
