@@ -2,10 +2,10 @@
 report_file 	:= main.pdf
 md_files 		:= $(wildcard *.md)
 tex_files 		:= $(wildcard latex/*.tex)
-doc_file 		:= draft_$(shell date +'%Y-%m-%d').docx
-opts 			:= -H latex/preamble.tex -B latex/before.tex \
-					--embed-resources -N \
-					--template=latex/template.tex
+doc_file 		:= notes/draft_$(shell date +'%Y-%m-%d').docx
+opts 			:= 	-H latex/preamble.tex -B latex/before.tex \
+							--embed-resources -N \
+							--template=latex/template.tex
 
 # Define targets
 all: $(report_file)
@@ -21,6 +21,7 @@ main.tex : config.yml $(md_files) $(tex_files) refs.bib
 
 docx : main.tex
 	@pandoc $< --from latex --to docx -o $(doc_file)
+	@open $(doc_file)
 
 view:
 	open -a Skim $(report_file)
