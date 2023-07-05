@@ -1,3 +1,5 @@
+.PHONY: view clean
+
 # Define variables
 report_file 	:= main.pdf
 md_files 		:= $(wildcard *.md)
@@ -31,4 +33,6 @@ view:
 	open -a Skim $(report_file)
 
 clean:
+	cp main.pdf EnergySavings_HomeWork_$(shell date +%Y-%m-%d).pdf
 	rm -f main.*
+

@@ -540,4 +540,19 @@ $for(include-after)$
 $include-after$
 
 $endfor$
+
+% Place the book cover
+\newgeometry{margin=0pt}
+\begin{titlepage}
+    \thispagestyle{empty} % Remove page number on this page
+  
+    \vfill
+  
+    \centering
+    \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{final_page.pdf}
+  
+    \vfill
+\end{titlepage}
+\restoregeometry
+
 \end{document}
