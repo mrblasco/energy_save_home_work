@@ -29,6 +29,11 @@ link-citations: true
 links-as-notes: true
 toc: true
 toc-title: Table of Contents
+linkcolor: blueEC!90
+filecolor: green
+citecolor: red
+urlcolor: blueEC!50!black
+toccolor: magenta
 
 linkcolor: blueEC!90
 filecolor: green
