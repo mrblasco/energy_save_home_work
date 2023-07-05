@@ -1,4 +1,6 @@
-# Saving energy at home {#sec:home}
+\clearpage
+
+# Saving energy at home
 
 <!-- Section highlights
 \begin{keypoints}{Title}
@@ -19,26 +21,35 @@ The Energy Paradox explains why households often do not adopt energy-saving prac
 Information nudges and energy labels effectively promote energy savings by providing easy-to-understand information and making long-term impacts more salient.
 One-stop shops, individual feedback with goal setting, intrinsic motivations and social norms, and warnings and fact-checking are additional interventions that encourage energy conservation at home. -->
 
+
 <!-- The need for an integration of engineering, economic and behavioural perspectives has relatively long history, reaching back to at least the 1980. -->
+
+
+<!-- Move toe section 2. -->
+
+Behavioural interventions to promote energy conservation during energy crises have a long history, dating back to the first global energy crisis in the 1970s [@craig1978assessing; @shama1983energy; @coltrane1986social].  These interventions encompass a wide range of targets. They can encourage households to adopt small behavioural changes like following simple energy-saving tips. Figure \ref{playingmypart} illustrates this approach with the “Playing My Part” information campaign launched by the European Commission in collaboration with the International Energy Agency (IEA) to tackle the energy crisis following Russia's invasion of Ukraine. This information campaign identified nine simple steps citizens can take to "save money, reduce reliance on Russian energy, support Ukraine, and help the planet." These steps include turning down the heating, using less air conditioning, adjusting the boiler's settings, working more from home, and use more often public transportation. [According to IEA estimates](https://www.iea.org/reports/playing-my-part), following these recommendations can save households in the EU over EUR 450 per year, reduce oil consumption by 220 million barrels annually, and save 17 billion cubic meters of gas.
+
+Promoting home improvements constitutes another broad category of actionable objectives of behavioural interventions. This category ranges from encouraging citizens to replace old electric appliances with new, energy-efficient ones to fostering long-term investments in alternative energy sources, such as solar panels. An illustrative example is [the “Solarize” program promoting social interactions and nudges to increase the adoption of photovoltaic panels in US cities.](https://resources.environment.yale.edu/gillingham/GillinghamBollinger_SocialLearningPV.pdf) 
+
+In this section, we review the challenges and advantages of interventions targeting these different aspects, examining the empirical evidence on their effects as reported in the academic literature.
+
+![Infographic from the ](Images/playingmypart-infographic.png){#playingmypart}
 
 Policy interventions promoting energy conservation among households aim to raise awareness of the benefits of energy savings and promote energy efficiency. These policies encourage families to change their energy consumption behaviours, like switching off lights and appliances when not in use, cooking more efficiently, and minimising the use of heating and cooling systems. Moreover, energy-saving policies incentivise replacing outdated appliances, such as substituting traditional incandescent bulbs with modern LED ones, purchasing energy-efficient devices, and integrating "smart" home systems for monitoring home energy consumption. In addition, long-term strategies can facilitate investments in home improvements, ranging from minor enhancements like upgrading old windows to reduce heat loss during winter to installing photovoltaic panels for generating solar energy.
 
-Information campaigns to raise awareness of energy-saving opportunities have a long history and reach back to the initial global "energy crisis" experienced in the 1970s. However, early research highlighted a significant challenge in these campaigns, stating that despite promoting energy conservation through large-scale information dissemination, only a minority of individuals responded positively. This 'weak adoption' was attributed to the inherent difficulties associated with processing the provided information and psychological factors, as indicated by @coltrane1986social, among others. 
+Information campaigns to raise awareness of energy-saving opportunities have a long history and reach back to the initial global "energy crisis" experienced in the 1970s. However, early research highlighted a significant challenge in these campaigns, stating that despite promoting energy conservation through large-scale information dissemination, only a minority of individuals responded positively. This 'weak adoption' was attributed to the inherent difficulties associated with processing the provided information and psychological factors, as indicated by @coltrane1986social, among others.
 
-Today, experts agree that successful energy-saving programs must consider economic and behavioural factors. This realisation can be traced back to the research conducted by @shama1983energy, who emphasised the need to integrate these crucial elements into energy conservation initiatives. And there is a large literature on this topic. 
+Today, experts agree that successful energy-saving programs must consider economic and behavioural factors. This realisation can be traced back to the research conducted by @shama1983energy, who emphasised the need to integrate these crucial elements into energy conservation initiatives. And there is a large literature on this topic.
 
-More recently, the European Commission and IEA launched the ["Playing My Part" information campaign](https://www.iea.org/reports/playing-my-part) in response to Russia's invasion of Ukraine and halt on Russian imports of energy supplies ensuing it.
+More recently, the European Commission and IEA launched the [&#34;Playing My Part&#34; information campaign](https://www.iea.org/reports/playing-my-part) in response to Russia's invasion of Ukraine and halt on Russian imports of energy supplies ensuing it.
 
 This campaign urged households, first and foremost, to adopt small changes in their everyday energy consumption, such as adjusting their boiler settings, turning down heating, using less air-conditioning, and driving their cars more economically. Secondly, it also encouraged households to switch to energy-efficient technologies, such as purchasing electric heat pumps or installing programmable "smart" thermostats, while asking Member States to intensify the efforts to facilitate the process.
 
-![Infographic from the "Playing My Part" information campaign by the IEA and European Commission](Images/playingmypart-infographic.png)
-
-
 However, it is difficult to anticipate how information campaigns like "Playing My Part" can influence people to reduce their energy consumption during a crisis.
 
-On the one hand, the recent increase in retail energy prices due to the surge in wholesale prices caused by the embargo on Russia's fossil fuels may cause people to be more concerned about the impact of higher energy bills. Therefore, individuals may be more inclined to change their energy usage and actively search for ways to reduce their energy consumption to lower their bills. At the same time,  government interventions to calm energy prices, despite being necessary to offer relief to individuals, could weaken the incentive for households to achieve energy savings. 
+On the one hand, the recent increase in retail energy prices due to the surge in wholesale prices caused by the embargo on Russia's fossil fuels may cause people to be more concerned about the impact of higher energy bills. Therefore, individuals may be more inclined to change their energy usage and actively search for ways to reduce their energy consumption to lower their bills. At the same time,  government interventions to calm energy prices, despite being necessary to offer relief to individuals, could weaken the incentive for households to achieve energy savings.
 
-On the other hand, many studies have shown that, despite receiving basic information about the potential benefits of good energy conservation practices, only a minority of individuals tend to adopt such practices, even when cost-effective [@jaffe1994energy]. This means that most individuals often stick to their usual energy consumption patterns or habits rather than trying to reduce their energy consumption.  
+On the other hand, many studies have shown that, despite receiving basic information about the potential benefits of good energy conservation practices, only a minority of individuals tend to adopt such practices, even when cost-effective [@jaffe1994energy]. This means that most individuals often stick to their usual energy consumption patterns or habits rather than trying to reduce their energy consumption.
 
 \begin{keypoints}
 Classical explanations for the Energy Paradox
@@ -52,23 +63,22 @@ Classical explanations for the Energy Paradox
 \end{itemize}
 \end{keypoints}
 
-Classical explanations for this paradox (see the Box) assume that individuals would make optimal decisions if they had more information about costs and benefits or if the market offered them more personalised solutions to save energy. However, much psychology and behavioural economics evidence have challenged these assumptions because people do not typically make optimal decisions if under the best conditions. On the contrary, individuals often act as if they were predictably "irrational" or biased. 
+Classical explanations for this paradox (see the Box) assume that individuals would make optimal decisions if they had more information about costs and benefits or if the market offered them more personalised solutions to save energy. However, much psychology and behavioural economics evidence have challenged these assumptions because people do not typically make optimal decisions if under the best conditions. On the contrary, individuals often act as if they were predictably "irrational" or biased.
 
-Based on such evidence, other explanations for the Energy Paradox have emerged. Here, we provide two examples: 
+Based on such evidence, other explanations for the Energy Paradox have emerged. Here, we provide two examples:
 
-* **Time-inconsistent preferences**. People often delay or postpone action despite knowing there will be negative consequences, a form of procrastination. This phenomenon is known as inconsistent time preferences, where people make choices today that are inconsistent with their future well-being and preferences. For example, people prefer to keep their heating systems at high levels to stay warm and comfortable, but they systematically regret their decision when they receive a high energy bill.  For example, a recent study based on a survey with an experimental design shows that people who exhibited time-inconsistent preferences also tended to over-consume energy at home [@werthschulte2021role].  
-
+* **Time-inconsistent preferences**. People often delay or postpone action despite knowing there will be negative consequences, a form of procrastination. This phenomenon is known as inconsistent time preferences, where people make choices today that are inconsistent with their future well-being and preferences. For example, people prefer to keep their heating systems at high levels to stay warm and comfortable, but they systematically regret their decision when they receive a high energy bill.  For example, a recent study based on a survey with an experimental design shows that people who exhibited time-inconsistent preferences also tended to over-consume energy at home [@werthschulte2021role].
 * **Loss aversion**. Another example is that, when making energy decisions, individuals may find it too costly to deviate from their current energy consumption patterns or “status quo” because it involves giving up their current comfortable lifestyle, which they have become accustomed to. Therefore, they may resist making changes, even if the potential rewards are significant, due to the fear of loss. This phenomenon is known as loss aversion, where people fear losses more than they seek equivalent gains. A recent study, based on a large-scale survey of EU citizens, shows that individuals who are loss averse are less likely to invest in energy-efficient appliances or retrofit measures [@schleich2019large].
 
-The reasons for the Energy Paradox remain a question still being studied, and the behavioural factors influencing households' energy decisions are still unclear. So, in this report, we take a more practical approach by exploring different interventions found to be successful in the academic literature. This will help us understand the challenges and effectiveness of other solutions. 
+The reasons for the Energy Paradox remain a question still being studied, and the behavioural factors influencing households' energy decisions are still unclear. So, in this report, we take a more practical approach by exploring different interventions found to be successful in the academic literature. This will help us understand the challenges and effectiveness of other solutions.
 
 Table \ref{tab:households} summarises the interventions discussed below.
 
 ## Information nudges and energy labels
 
-Information Nudges is a term used to describe policies sending households energy-saving tips or rules of thumb to induce desired energy consumption choices or rectify behavioural biases. These messages are typically sent via electricity bills, postcards, emails, and other media. 
+Information Nudges is a term used to describe policies sending households energy-saving tips or rules of thumb to induce desired energy consumption choices or rectify behavioural biases. These messages are typically sent via electricity bills, postcards, emails, and other media.
 
-Extensive literature shows that Information Nudges are an effective way to promote energy savings [@craig1978assessing; @ruokamo2022effect; @dellavalle2020nudging; @caballero2021tackling].  However, multiple factors influence the effectiveness of such measures, including the credibility of the source [@craig1978assessing], the delivery method, and the target groups. 
+Extensive literature shows that Information Nudges are an effective way to promote energy savings [@craig1978assessing; @ruokamo2022effect; @dellavalle2020nudging; @caballero2021tackling].  However, multiple factors influence the effectiveness of such measures, including the credibility of the source [@craig1978assessing], the delivery method, and the target groups.
 
 At the same time, the impact on energy consumption is of modest size. A recent meta-analysis based on 52 studies between 2005 and 2020 [@buckley2020prices] shows that the average effect of Information Nudges ranges between 2% and 4%. Despite the modest effect size, they are typically inexpensive and easy to deploy and the associated cost-effectiveness prompts their use.
 
@@ -76,7 +86,7 @@ Energy Labels are another form of information nudging as they serve to intuitive
 
 ## Energy one-stop shops
 
-One-stop shops are agencies that aim to offer integrated solutions and customer-centric services that simplify the decisional process for the renovation of residential buildings. Indeed, increasing the efficiency of residential buildings through renovations is challenging. It involves a cumbersome and lengthy process in a fragmented market that might discourage consumers. Interventions promoting one-stop shops can bridge the fragmented demand and supply of the renovation value chain. These shops guide citizens and businesses through the renovation journey, from start to finish, and help them overcome hurdles they would otherwise face alone. One-stop shops are relatively new, and so far, 63 case studies have been identified and analysed in Europe [@bertoldi2021role] providing early evidence of their effectiveness. 
+One-stop shops are agencies that aim to offer integrated solutions and customer-centric services that simplify the decisional process for the renovation of residential buildings. Indeed, increasing the efficiency of residential buildings through renovations is challenging. It involves a cumbersome and lengthy process in a fragmented market that might discourage consumers. Interventions promoting one-stop shops can bridge the fragmented demand and supply of the renovation value chain. These shops guide citizens and businesses through the renovation journey, from start to finish, and help them overcome hurdles they would otherwise face alone. One-stop shops are relatively new, and so far, 63 case studies have been identified and analysed in Europe [@bertoldi2021role] providing early evidence of their effectiveness.
 
 ## Individual feedback and goal setting
 
@@ -114,23 +124,23 @@ experimental survey shows that warning people about politically
 motivated attempts to spread misinformation is an effective way to fight
 the spread of misinformation on climate change [@van2015social]. However, more work is needed to understand what works against misinformation.
 
+---
 
-  -----------------------------------------------------------------------
   **Intervention**      **Definition**
-  --------------------- -------------------------------------------------
+
+---
+
   ** **                  
 
   **Information         Energy-saving tips or energy-efficiency
   nudges**              information through energy labels.
 
   ** **                  
-                        
 
   **One-stop            Agencies to guide citizens and businesses through
   shops**               the entire process of energy renovation.
 
   ** **                  
-                        
 
   **Feedback & goals**  Personalized information about energy consumption
                         to make it more visible to consumers.
@@ -138,38 +148,31 @@ the spread of misinformation on climate change [@van2015social]. However, more w
                         setting.
 
   ** **                  
-                        
 
   **Social              Providing information about energy consumption by
   comparisons**         peers to activate social norms of energy
                         conservation.
 
   ** **                  
-                        
 
   **Warnings &          Warning people against misinformation about
   fact-checking**       climate change, the risks of nuclear power, etc.
 
-                        
-  -----------------------------------------------------------------------
+---
 
 Table: Intereventions promoting energy conservation at home \label{tab:households}
 
-### Takeaways {-}
+### Takeaways
 
--   Encouraging energy savings is difficult due to households'
-    information barriers, misinformation, 
-    heavily discounted future efficiency gains,
-    heterogeneity, and cognitive barriers in energy consumption
-    decision-making.
+- Encouraging energy savings is difficult due to households'
+  information barriers, misinformation,
+  heavily discounted future efficiency gains,
+  heterogeneity, and cognitive barriers in energy consumption
+  decision-making.
+- Several behavioural interventions address these problems adequately.
 
--   Several behavioural interventions address these problems adequately.
-
-    -   **Information barriers:** information nudges, energy labels,
-        warnings, fact-checking
-
-    -   **Cognitive and effortful process:** information nudges, energy labels, one-stop energy shops
-
-    -   **Motivation:** feedback, goal setting, social norm
-        interventions
-
+  - **Information barriers:** information nudges, energy labels,
+    warnings, fact-checking
+  - **Cognitive and effortful process:** information nudges, energy labels, one-stop energy shops
+  - **Motivation:** feedback, goal setting, social norm
+    interventions
