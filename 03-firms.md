@@ -1,7 +1,7 @@
 <!-- Todo: move 1st paragraph to the intro -->
 \clearpage 
 
-# Saving energy at work {#sec:work}
+# Saving energy at work {#work}
 
 <!-- Main text -->
 
@@ -57,8 +57,7 @@ Several studies have shown that non-monetary rewards, including vouchers, public
 In a serious game called "Energy Chickens", energy saving measured
 through plug-in sensors earned participants eggs with which they could
 purchase accessories in a virtual farm. The intervention led to
-significant energy savings; however, the effects did not seem to last
-beyond duration of the game [@orland2014saving]. Similarly, a large-scale competition involving small material rewards among 500 Italian bank branches also
+significant energy savings; however, the effects did not seem to last beyond the duration of the game [@orland2014saving]. Similarly, a large-scale competition involving small material rewards among 500 Italian bank branches also
 reduced energy consumption [@fanghella2022evaluating].
 
 <!-- Additionally, @schall2017incentivizing -->

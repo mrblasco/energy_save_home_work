@@ -43,6 +43,25 @@
   leftmargin=*,
 }
 
+% Custom abstract environment
+\makeatletter
+\renewenvironment{abstract}{
+    \begin{center}
+    \bfseries\large\sffamily\abstractname\vspace{-0.5em}\vspace{\z@}
+    \end{center}
+    \list{}{%
+        \setlength{\leftmargin}{1.5cm}% Adjust the left margin
+        \setlength{\rightmargin}{\leftmargin}%
+    }%
+    \item\relax
+}{
+    \endlist
+}
+\makeatother
+
+% Hide command to pandoc
+\let\Begin\begin
+\let\End\end 
 
 
 % Create highlight boxes
@@ -58,6 +77,16 @@
     boxrule     =   0.5pt,
     fonttitle   =   \bfseries,
     title       = Box~\thetcbcounter: #2, #1,
+}
+
+% Define tclbox style for executive summary
+\newtcolorbox{execsummary}[1][]{
+    colback=gray!10, % Background color
+    colframe=blueEC, % Border color
+    fonttitle=\bfseries, % Title font style
+    %title=Executive Summary, % Title text
+    %attach title to upper, % Attach title to the upper border
+    #1 % Additional style options
 }
 
 % Custom table textbox

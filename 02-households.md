@@ -5,7 +5,7 @@ nocite: |
 
 \clearpage 
 
-# Saving energy at home {#sec:home}
+# Saving energy at home {#home}
 
 Behavioural interventions to promote energy conservation at home have a long history, dating back to the first global energy crisis in the 1970s [@craig1978assessing].  These interventions encompass a wide range of targets. They can encourage households to adopt small behavioural changes, improve their homes, and invest in clean energy sources.
 

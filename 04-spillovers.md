@@ -1,4 +1,4 @@
-# Spillovers and Peer Effects {#sec:spillovers}
+# Spillovers and Peer Effects {#spillovers}
 
 Policies promoting energy conservation at home and work are strongly interlinked, despite being often treated separately. The concept of "spillover" is often used to describe this connection, as it refers to the effects of policy interventions on multiple non-targeted behaviours.
 
