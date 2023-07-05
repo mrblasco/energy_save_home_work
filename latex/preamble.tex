@@ -13,7 +13,7 @@
 
 % Fonts
 \usepackage{fontspec}
-\setmainfont{Optima}
+\setmainfont{Open Sans}
 
 % Add packages
 \usepackage{awesomebox}
@@ -25,6 +25,25 @@
 \sectionfont{\color{blueEC}}  % sets colour of chapters
 \subsectionfont{\color{blueEC!80}}  % sets colour of chapters
 \subsubsectionfont{\color{blueEC!60}}  % sets colour of chapters
+
+% Lists
+\usepackage{enumitem}
+\usepackage{tikz}
+
+% Define a custom circle label
+\newcommand*\circled[1]{%
+  \tikz[baseline=(char.base)]{
+    \node[shape=circle,draw=blueEC,fill=blueEC, text=white, inner sep=2pt] (char) {#1};
+  }%
+}
+
+% Customize the enumerate environment
+\setlist[enumerate]{
+  label={\protect\circled{\arabic*}},
+  leftmargin=*,
+}
+
+
 
 % Create highlight boxes
 \usepackage[most]{tcolorbox}
@@ -92,7 +111,7 @@
         \end{center}
     
         \vfill
-        This publication was authored by: \@author
+        This publication was authored by \@author
 
     \end{titlepage}
 }
