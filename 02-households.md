@@ -13,7 +13,7 @@ Figure \ref{playingmypart} illustrates the encouraging small behavioural changes
  
 ![Infographic from the "Playing My Part" information campaign launched by the IEA and European Commission](Images/playingmypart-infographic.png){#playingmypart}
 
-According to [the Bruegel's Database of National Energy Response to the Energy Crisis](https://www.bruegel.org/dataset/national-energy-policy-responses-energy-crisis), several EU countries launched similar information campaigns with energy-saving tips and guidelines for households, including the ["One Step Lower" campaign](https://www.astettaalemmas.fi) in Finland, the "I Have an Impact" in Belgium, and the "Saving at Home" in Greece. 
+According to [the Bruegel's Database of National Energy Response to the Energy Crisis](https://www.bruegel.org/dataset/national-energy-policy-responses-energy-crisis), several EU countries launched similar information campaigns with energy-saving tips and guidelines for households, including the ["One Step Lower" campaign](https://www.astettaalemmas.fi) in Finland, the "I Have an Impact" in Belgium, the "Saving at Home" in Greece, and ["Mission11"](https://mission11.at) in Austria.
 
 To accelerate energy-efficient investments, policymakers can use fiscal incentives to make people replace old electric appliances with energy-efficient new ones, renovate their buildings, or invest in alternative energy sources, such as solar panels. However, research shows that behavioural approaches complement these interventions and that economic incentives alone are insufficient in many cases [@jaffe1994energy] to convince people to change behaviour.
 
@@ -98,7 +98,7 @@ topics such as the causes of global climate change [@oreskes2004scientific; @far
 
 Behavioural interventions, such as warnings and fact-checking, offer a
 promising approach to "inoculate" public attitudes against the spread of
-misinformation about energy policies. For example, a recent
+misinformation about energy policies. For example, an
 experimental survey shows that warning people about politically
 motivated attempts to spread misinformation is an effective way to fight
 the spread of misinformation on climate change [@van2015social]. However, more work is needed to understand what works against misinformation.

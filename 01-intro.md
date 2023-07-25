@@ -14,6 +14,8 @@
 
 \End{execsummary}
 
+\clearpage
+
 # Policy Recommendations {-}
 
 \Begin{execsummary}
@@ -27,6 +29,8 @@
 4. Improved Framework for Policy Evaluation: Develop a comprehensive framework for evaluating the effectiveness of energy-saving policies across different contexts, considering contextual factors to design targeted interventions.
 
 \End{execsummary}
+
+\newpage
 
 # Introduction
 

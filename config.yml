@@ -21,7 +21,7 @@ affiliation:
 
 
 fontsize: 11pt 
-linestretch: 1.15
+linestretch: 1.2
 bibliography: [refs.bib]
 link-citations: true
 links-as-notes: true

@@ -1,5 +1,5 @@
 
-\clearpage 
+<!-- \clearpage  -->
 
 # Conclusion and Recommendations {#conclusion}
 
