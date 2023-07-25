@@ -1,7 +1,12 @@
 .PHONY: view clean
 
+# Get the current version
+current_version := $(shell git describe --tags --abbrev=0)
+
+# Filename with the current date
+output_filename := EnergySavings_HomeWork_$(current_version).pdf
+
 # Define variables
-report_file 	:= main.pdf
 md_files 		:= $(wildcard *.md)
 tex_files 		:= $(wildcard latex/*.tex)
 doc_file 		:= notes/draft_$(shell date +'%Y-%m-%d').docx
@@ -9,20 +14,25 @@ opts 			:= 	-H latex/preamble.tex -B latex/before.tex \
 							--embed-resources -N \
 							--template=latex/template.tex
 
-# Define targets
-all: $(report_file)
+render_pdf := pandoc --from=markdown+yaml_metadata_block -C \
+				-H latex/preamble.tex -B latex/before.tex \
+				--embed-resources -N \
+				--template=latex/template.tex
 
-# Define references 
+# Define targets
+all: $(output_filename)
+
+# Define references
 refs.bib : $(HOME)/iCloud/Readings/Energy/_nrg.bib
 	cp $< $@
 
 # Create main file in latex
 main.tex : config.yml $(md_files) $(tex_files) refs.bib 
-	@pandoc --from=markdown+yaml_metadata_block $< $(md_files) -C -o $@ $(opts)
+	$(render_pdf) $< $(md_files) -o $@
 
-# Convert to pdf 
-%.pdf : %.tex
-	@xelatex $<
+# Convert to pdf
+$(output_filename) : main.tex
+	@xelatex $< && cp main.pdf $@
 
 # Convert to docx
 docx : main.tex
@@ -30,9 +40,8 @@ docx : main.tex
 	@open $(doc_file)
 
 view:
-	open -a Skim $(report_file)
+	open -a Skim $(output_filename)
 
 clean:
-	cp main.pdf EnergySavings_HomeWork_$(shell date +%Y-%m-%d).pdf
-	rm -f main.*
+	rm -f main.* $(output_filename)
 
